@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Global Title</title>
+<title>Cecilia Yang</title>
 	<link rel="stylesheet" href="css/bootstrap-responsive.css" />
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/style.css" />
@@ -12,22 +12,28 @@
 
 
 <body>
-	<div class="row">
-		<div class="span8">
-			<a href="/">Work</a>
-			<a href="/blog">Blog</a>
-			<a href="/info">Info</a>
-			<a href="/contact">Contact</a>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/">Info</a>
+				<a href="/work">Work</a>
+				<a href="/blog">Blog</a>
+				<a href="/contact">Contact</a>
+			</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="span8">
+	<div class="container">
 			<%= yield %>
-		</div>
 	</div>
 	
 </body>
+
+<footer class="footer">
+	
+	Footer information here. Copyright.
+	
+</footer>
 
 
 </html>
