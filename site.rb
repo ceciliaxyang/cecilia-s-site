@@ -8,12 +8,12 @@ get '/' do
   erb :info
 end
 
-get '/blog' do
-  erb :blog
-end
-
 get '/work' do
   erb :work
+end
+
+get '/blog' do
+  erb :blog
 end
 
 get '/contact' do
