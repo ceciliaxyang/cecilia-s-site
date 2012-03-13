@@ -543,16 +543,13 @@ input,
 button,
 select,
 textarea {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 24px;
+  font-weight: 100;  
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
-input,
-button,
-select,
-textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -850,6 +847,11 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
 }
 :-moz-placeholder {
   color: #999999;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  font-weight: 100;  
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 ::-webkit-input-placeholder {
   color: #999999;
