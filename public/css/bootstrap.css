@@ -106,12 +106,12 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'EB Garamond',"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   line-height: 36px;
   font-weight: 100;
   color: #333333;
-  text-shadow: 0 1px #FFFFFF;
+  /*text-shadow: 0 1px #FFFFFF;*/
   background-color: #FFFFFF;
 }
 a {
@@ -2510,9 +2510,9 @@ button.btn.small, input[type="submit"].btn.small {
   padding: 8px 20px 12px;
   margin-left: -20px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1;
-  color: #ffffff;
+  color: #999999;
 }
 .navbar .navbar-text {
   margin-bottom: 0;
@@ -2657,8 +2657,6 @@ button.btn.small, input[type="submit"].btn.small {
   width: 1px;
   margin: 0 9px;
   overflow: hidden;
-  background-color: #222222;
-  border-right: 1px solid #333333;
 }
 .navbar .nav.pull-right {
   margin-left: 10px;
