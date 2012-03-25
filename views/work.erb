@@ -4,16 +4,17 @@
 
 <div class="container" data-spy="scroll" data-target=".subnav" data-offset="50">
 			
+			A few featured projects below. For more stuff, you can view my work on <a href="http://www.ceciliayang.com">Cargo</a>.<br><br>	
+			
 			<header class="jumbotron subhead">
-			  <div class="subnav subnav-fixed">
-			    <ul class="nav nav-pills">
+			  <div class="subnav">
+			    <ul class="nav nav-pills">				
 			      <li><a href="#project1">Project 1</a></li>
 			      <li><a href="#project2">Project 2</a></li>
 			      <li><a href="#project3">Project 3</a></li>
 			      <li><a href="#project4">Project 4</a></li>
 			    </ul>
 			  </div>
-			<br>A few featured projects below. For more stuff, you can view my work on <a href="http://www.ceciliayang.com">Cargo</a>.<br>	
 			</header>
 
 <!-- Project 1
@@ -94,5 +95,34 @@
 	   
 	</script>
 </section>
+
+<script>
+	// fix sub nav on scroll
+	// this part initializes variables to use below, using jquery's offset()
+	// function to the pixel height at which we should fix subnav
+	// http://api.jquery.com/offset/
+
+	var $win = $(window)
+	  , $nav = $('.subnav')
+	  , navTop = $('.subnav').length && $('.subnav').offset().top - 100
+	  , isFixed = 0
+
+	// call processScroll, below, once when you load the page
+	processScroll()
+	// and every time the user scrolls
+	$win.on('scroll', processScroll)
+
+	// 
+	function processScroll() {
+	  var i, scrollTop = $win.scrollTop()
+	  if (scrollTop >= navTop && !isFixed) {
+	    isFixed = 1
+	    $nav.addClass('subnav-fixed')
+	  } else if (scrollTop <= navTop && isFixed) {
+	    isFixed = 0
+	    $nav.removeClass('subnav-fixed')
+	  }
+	}
+</script>
 	
 </div>

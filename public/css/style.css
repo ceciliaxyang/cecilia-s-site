@@ -72,8 +72,6 @@ input {
     border-radius: 4px 4px 4px 4px;
     height: 36px;
     width: 100%;
-	padding-top: 45px;
-
 }
 .subnav .nav {
     margin-bottom: 0;
@@ -118,6 +116,8 @@ input {
     right: 0;
     top: 40px;
     z-index: 1020;
+	padding-top: 45px;
+
 }
 .subnav-fixed .nav {
     margin: 0 auto;
