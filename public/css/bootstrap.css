@@ -106,10 +106,9 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Crimson Text","lato","Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  line-height: 36px;
-  font-weight: 100;
+  font-weight: 300;
   color: #333333;
   /*text-shadow: 0 1px #FFFFFF;*/
   background-color: #FFFFFF;
@@ -322,8 +321,10 @@ h6 small {
   color: #999999;
 }
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+
+	font: 100 72px/72px "lato";
+    letter-spacing: -2px;
+    text-transform: uppercase;
 }
 h1 small {
   font-size: 18px;
@@ -2640,12 +2641,12 @@ button.btn.small, input[type="submit"].btn.small {
   line-height: 19px;
   color: #999999;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
-  text-decoration: none;
+  /*color: #ffffff;*/
+  text-decoration: underline;
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
   color: #ffffff;
