@@ -1,24 +1,98 @@
 <script src='js/bootstrap-carousel.js'></script>
+<script src="assets/js/bootstrap-scrollspy.js"></script>
 
-<div id="myCarousel" class="carousel">
-	<!-- Carousel items -->
-	<div class="carousel-inner">
-		<div class="active item"><img src="http://www.local-iceland-tours.com/MicroDNN/Portals/IcelandTours/nort.jpg"></div>
-		<div class="item"><img src="http://www.theodora.com/wfb/photos/iceland/aurora_borealis_northern_lights_iceland_photo_mfa.jpg"></div>
-		<div class="item"><img src="http://www.icelandviking.com/wp-content/uploads/2008/11/iceland-northern-lights.jpg"></div>
+
+<div class="container" data-spy="scroll" data-target=".subnav" data-offset="50">
+			
+			<header class="jumbotron subhead">
+			  <div class="subnav subnav-fixed">
+			    <ul class="nav nav-pills">
+			      <li><a href="#project1">Project 1</a></li>
+			      <li><a href="#project2">Project 2</a></li>
+			      <li><a href="#project3">Project 3</a></li>
+			      <li><a href="#project4">Project 4</a></li>
+			    </ul>
+			  </div>
+			<br>A few featured projects below. For more stuff, you can view my work on <a href="http://www.ceciliayang.com">Cargo</a>.<br>	
+			</header>
+
+<!-- Project 1
+================================================== -->
+	<section id="project1">
+		<div class="workblock">
+			<h1><small>PROJECT 1</h1>
+		</div>
+	</section>
+
+<!-- Project 2
+================================================== -->
+<section id="project2">
+	<div class="workblock">
+		
+	    <div class="row">
+	    	<div class="span4">
+					<h1><small>Up Demo for iPad</h1>
+					I designed an iPad app displayed at AT&T stores that customers could interact with to learn more about the Jawbone UP product and its key features.
+					<br>ROLES:
+					<br>Visual design
+					<br>Interaction Design
+			</div>
+			
+		    <div class="span8">
+					<img src="img/work/updemo/updemo1.png">
+			</div>
+	    </div>
+
+	    <div class="row">
+	    	<div class="span4">
+					<h1><small>Main Screens</h1>
+						Each of the main navigation tabs in the demo explained what lifestyle changes UP addresses: moving more, sleeping and eating better, and doing it all in a social (and heathily competitive) way.
+						<br><br>From each of these screens, customers could launch relevant videos and image galleries.
+			</div>
+			
+		    <div class="span8">
+					<img src="img/work/updemo/updemo2.png">
+			</div>
+	    </div>
+		
+	</div>
+</section>
+
+
+<!-- Project 3
+================================================== -->
+<section id="project3">	
+	<div class="workblock">
+		<h1><small>PROJECT 3</h1>
+	</div>
+</section>
+
+<!-- Project 4
+================================================== -->
+<section id="project4">	
+	<div class="workblock">
+		<div id="myCarousel" class="carousel">
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="active item"><img src="http://www.local-iceland-tours.com/MicroDNN/Portals/IcelandTours/nort.jpg"></div>
+				<div class="item"><img src="http://www.theodora.com/wfb/photos/iceland/aurora_borealis_northern_lights_iceland_photo_mfa.jpg"></div>
+				<div class="item"><img src="http://www.icelandviking.com/wp-content/uploads/2008/11/iceland-northern-lights.jpg"></div>
+			</div>
+
+		<!-- Carousel nav -->
+
+			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		</div>
 	</div>
 
-<!-- Carousel nav -->
-
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	<script>
+		$('.myCarousel').carousel({
+			interval: 2000
+		})
+		$('#subnav').scrollspy()
+	   
+	</script>
+</section>
+	
 </div>
-
-<script>
-	$('.myCarousel').carousel({
-		interval: 2000
-	})
-</script>
-
-Here's my work
-

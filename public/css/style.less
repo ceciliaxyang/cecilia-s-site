@@ -1,0 +1,58 @@
+@blue: #59B5E2;
+@orange: #F6BA48;
+@lightgrey: #F1F1F1;
+@green: #A8C41A;
+@darkgrey: #333333;
+@lightbeige: #FCFAF2;
+
+@block-height: 520px;
+@workblock-height: auto;
+
+
+.scrollblock {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: @block-height;
+
+  &#page1 {
+    background: white;
+  }
+
+  &#page2 {
+    background: @lightgrey;
+  }
+
+  &#page3 {
+    background: @orange;
+  }
+
+  &#page4 {
+    background: @lightgrey;
+  }
+
+  &#page5 {
+    background: @lightbeige;
+  }
+
+  &#page6 {
+    background: @blue;
+  }
+
+  &#page7 {
+    background: @green;
+  }
+}
+
+
+.workblock {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: @workblock-height;
+  border-top: 1px dotted #999999;
+  margin-top: 30px;
+  padding-top: 30px;
+}
