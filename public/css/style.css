@@ -59,24 +59,22 @@ h2 {
 }
 
 h3 {
-	font: 20px/28px "RobotoRegular";
+	font: 20px/40px "RobotoRegular";
     text-transform: uppercase;
 }
 
 h4 {
-  font: 20px/28px "RobotoBold";
+  font: 20px/40px "RobotoBold";
   text-transform: uppercase;
   color: #999;
 }
 
 h5 {
-  font-size: 12px;
+
 }
 
 h6 {
-  font-size: 11px;
-  color: #999999;
-  text-transform: uppercase;
+
 }
 
 input {
@@ -118,7 +116,7 @@ input {
     margin-bottom: 0;
 }
 .subnav .nav > li > a {
-    border-left: 1px solid #F5F5F5;
+    border-left: 0px solid #F5F5F5;
     border-radius: 0 0 0 0;
     border-right: 1px solid #E5E5E5;
     margin: 0;
@@ -168,4 +166,8 @@ input {
 }
 .subnav .nav > li:first-child > a, .subnav .nav > li:first-child > a:hover {
     border-radius: 0 0 0 0;
+}
+
+.rowtop-pad {
+  padding-top: 50px;
 }
