@@ -1,7 +1,3 @@
-<script src='js/bootstrap-carousel.js'></script>
-<script src='js/bootstrap-scrollspy.js'></script>
-
-
 <div class="container" data-spy="scroll" data-target=".subnav" data-offset="50">
 			
 			A few featured projects below. For more stuff, you can view my work on <a href="http://www.ceciliayang.com">Cargo</a>.<br><br>	
@@ -104,7 +100,7 @@
 
 	var $win = $(window)
 	  , $nav = $('.subnav')
-	  , navTop = $('.subnav').length && $('.subnav').offset().top - 100
+	  , navTop = $('.subnav').length && $('.subnav').offset().top - $(".navbar-fixed-top").height()
 	  , isFixed = 0
 
 	// call processScroll, below, once when you load the page
@@ -123,6 +119,13 @@
 	    $nav.removeClass('subnav-fixed')
 	  }
 	}
+	
+	
+	
 </script>
+
+<script src='js/bootstrap-carousel.js'></script>
+<script src='js/bootstrap-scrollspy.js'></script>
+
 	
 </div>

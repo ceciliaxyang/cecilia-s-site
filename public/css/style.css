@@ -116,27 +116,7 @@ input {
 .jumbotron {
     position: relative;
 }
-.jumbotron h1 {
-    font-size: 81px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1;
-    margin-bottom: 9px;
-}
-.jumbotron p {
-    font-weight: 300;
-    margin-bottom: 18px;
-}
-.jumbotron .btn-large {
-    border-radius: 6px 6px 6px 6px;
-    font-size: 20px;
-    font-weight: normal;
-    margin-right: 10px;
-    padding: 14px 24px;
-}
-.jumbotron .btn-large small {
-    font-size: 14px;
-}
+
 .subhead {
     margin-bottom: 9px;
     padding-bottom: 0;
@@ -147,8 +127,7 @@ input {
 }
 .subnav {
     background-color: rgba(255, 255, 255, 0.97);
-    background-repeat: repeat-x;
-    border: 1px solid #E5E5E5;
+    border: 0px solid #E5E5E5;
     border-radius: 4px 4px 4px 4px;
     height: 36px;
     width: 100%;
@@ -178,7 +157,7 @@ input {
 .subnav .nav > li:first-child > a, .subnav .nav > li:first-child > a:hover {
     border-left: 0 none;
     border-radius: 4px 0 0 4px;
-    padding-left: 12px;
+    padding-left: 0px;
 }
 .subnav .nav > li:last-child > a {
     border-right: 0 none;
@@ -190,14 +169,14 @@ input {
     border-color: #D5D5D5;
     border-radius: 0 0 0 0;
     border-width: 0 0 1px;
-    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 0px 1px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.97);
-    left: 0;
-    position: fixed;
-    right: 0;
+   	padding-top: 40px;
+	position: fixed;
     top: 40px;
-    z-index: 1020;
-	padding-top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
 
 }
 .subnav-fixed .nav {
