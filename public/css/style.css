@@ -54,23 +54,25 @@ h1 {
 }
 
 h2 {
-	font: 70px/70px 'RobotoThin';
+	font: 50px/65px 'RobotoThin';
     text-transform: none;
+	color: #FFFFFF;
 }
 
 h3 {
-	font: 20px/40px "RobotoRegular";
-    text-transform: uppercase;
+	font: 40px/50px 'RobotoThin';
+    text-transform: none;
 }
 
 h4 {
-  font: 20px/40px "RobotoBold";
-  text-transform: uppercase;
-  color: #999;
+  	font: 20px/40px "RobotoRegular";
+    text-transform: uppercase;
 }
 
 h5 {
-
+	font: 16px/30px "RobotoBold";
+	text-transform: uppercase;
+	color: #999;
 }
 
 h6 {
