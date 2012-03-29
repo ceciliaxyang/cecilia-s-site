@@ -2108,6 +2108,7 @@ button.btn.small, input[type="submit"].btn.small {
   line-height: 18px;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px #FFFFFF;
   text-transform: uppercase;
 }
 .nav li + .nav-header {
@@ -2412,24 +2413,32 @@ button.btn.small, input[type="submit"].btn.small {
 .nav-collapse.collapse {
   height: auto;
 }
-.navbar .brand:hover {
-  text-decoration: none;
-}
+
 .navbar .brand {
   float: left;
   display: block;
-  padding: 8px 70px 50px;
-  font-size: 18px;
-  font-family: 'RobotoMedium';
-  line-height: 1;
-  color: #3cb9c5;
-  background-image: url("../img/logo.png");
+  padding: 2px 70px 0px;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/logo-02.png");
   background-repeat:no-repeat;
 }
+
+.navbar .brand:hover {
+  background-position: 0 -56;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-ms-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
+}
+
 .navbar .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
   color: #999999;
+  text-shadow: 0 1px #FFFFFF;
+
 }
 .navbar .navbar-text a:hover {
   color: #ffffff;
@@ -2549,10 +2558,10 @@ button.btn.small, input[type="submit"].btn.small {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 10px 11px;
+  text-shadow: 0 1px #FFFFFF;
   line-height: 19px;
   color: #999999;
   text-decoration: none;
-  /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
