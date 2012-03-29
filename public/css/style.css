@@ -8,7 +8,7 @@ body {
   background-color: #FFFFFF;
 }
 a {
-  color: #0088cc;
+  color: #3cb9c5;
   text-decoration: none;
 }
 a:hover {
@@ -18,7 +18,7 @@ a:hover {
 
 .content {
     padding-bottom: 200px;
-    padding-top: 100px;
+    padding-top: 140px;
 }
 
 p {
@@ -150,10 +150,10 @@ input {
     border-radius: 0 0 0 0;
     border-width: 0 0 1px;
     box-shadow: 0 1px 0 #FFFFFF inset, 0 0px 1px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.97);
-   	padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.90);
+   	padding-top: 0px;
 	position: fixed;
-    top: 40px;
+    top: 89px;
     left: 0;
     right: 0;
     z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */

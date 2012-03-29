@@ -2356,9 +2356,9 @@ button.btn.small, input[type="submit"].btn.small {
 .navbar-inner {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  background-color: rgba(255, 255, 255, 0.97);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: rgba(241, 241, 241, 0.90);
   border-bottom: 1px solid #EAEAEA;
 
 }
@@ -2418,12 +2418,13 @@ button.btn.small, input[type="submit"].btn.small {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 8px 20px 12px;
-  margin-left: -20px;
-  font-size: 20px;
-  font-weight: 500;
+  padding: 8px 70px 50px;
+  font-size: 18px;
+  font-family: 'RobotoMedium';
   line-height: 1;
-  color: #999999;
+  color: #3cb9c5;
+  background-image: url("../img/logo.png");
+  background-repeat:no-repeat;
 }
 .navbar .navbar-text {
   margin-bottom: 0;
@@ -2572,6 +2573,7 @@ button.btn.small, input[type="submit"].btn.small {
 .navbar .nav.pull-right {
   margin-left: 10px;
   margin-right: 0;
+  margin-top: 10px;
 }
 .navbar .dropdown-menu {
   margin-top: 1px;
