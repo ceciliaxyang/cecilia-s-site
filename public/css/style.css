@@ -28,8 +28,8 @@ p {
 }
 p small {
   font-size: 11px;
-  color: #999999;
 }
+
 .lead {
   margin-bottom: 18px;
   font-size: 28px;
@@ -37,6 +37,23 @@ p small {
   color: #333333;
 
 }
+
+.quote {
+    font: 100 56px/60px "lato";
+    letter-spacing: -2px;
+    margin: 0 10 10px;
+    text-indent: -6px;
+	color: #333333;
+}
+
+.quoter {
+    color: #999999;
+    font: 20px/20px 'RobotoRegular';
+    text-transform: uppercase;
+    text-indent: -10px;
+    text-shadow: 0 1px #FFFFFF;
+}
+
 h1,
 h2,
 h3,
