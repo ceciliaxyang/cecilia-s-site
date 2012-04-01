@@ -1,82 +1,109 @@
+<script>
+  $(document).ready(function() {
+    var scrollorama = $.scrollorama({
+      blocks:'.bioblock',
+    });
+
+    // animate the parallaxing
+
+    scrollorama.animate('#profilepic',{ delay: 0, duration: 150, property:'opacity', start:1.0, end: 0 });  
+
+  });
+
+</script>
+
 <div class="container">
+		
+		<div class="row">
+		
+			<div class="span5">
+				<img src="img/me.png">
+			</div>	
 	
-	<div class="row">
-		
-		<div class="span5">
-			<img src="img/me.png">
-		</div>	
-		
-		<div class="span6 offset1 rowtop-pad">
-		    <h1>Hello!</h1>
-			<br>
-			<p class="lead">I'm an interaction & visual designer based in San Francisco, CA. <br>I really, really like to make things.</p>
-			<p>(Beautiful and useful things.)</p>
+			<div class="span6 offset1 rowtop-pad">
+			    <h1>Hello!</h1>
+				<br>
+				<p class="lead">I'm an interaction & visual designer based in San Francisco, CA. <br>I really, really like to make things.</p>
+				<p>(Beautiful and useful things.)</p>
+			</div>
 		</div>
-		
-	</div>
 	
-	<div class="dot-separator">
-	</div>
-	
+
+	<div class="dot-separator"></div>
 
 	
 	<div class="row">
 
-		<div class="span8">
-				<h4>A super brief history.</h4>	
-			<br>2009<br>Graduated from Stanford with a B.S. in <a href="http://design.stanford.edu/PD/">Product Design</a>, and a minor in Creative Writing.
-			<br>Began work at <a href="http://www.jawbone.com">Jawbone</a> as an interaction designer.
-			<br><br>1993<br>Became a sister. My brother has my genes and also likes to make things.
+		<div class="span8" style="padding-bottom:30px;">
+			<h4>A super brief history.</h4>	
+			<br>2009<br>Graduated from Stanford with a B.S. in <a href="http://design.stanford.edu/PD/" target="new">Product Design</a>, and a minor in Creative Writing.
+			<br>Began work at <a href="http://www.jawbone.com" target="new">Jawbone</a> as an interaction designer.
+			<br><br>1993<br>Became a sister. My <a href="http://charlieyang.tumblr.com" target="new">brother</a> has my genes :) and also likes to make things.
 			<br><br>1989<br>Got in trouble for painting watercolor murals on the walls right before an open house.
 			<br>
 		</div>
-		
+
 		<div class="span3 offset1">
+			<img src="img/envelope.png">
+			<br><br>
 			<h5>Contact me.</h5>	
-			<p><a href="mailto:ceciliaxyang@gmail.com">ceciliaxyang@gmail.com</a>
-			<br><a href="http://www.facebook.com/ceciliayang">facebook.com/ceciliayang</a>
-			</p>
+			<p><a href="mailto:ceciliaxyang@gmail.com" target="new">ceciliaxyang@gmail.com</a></p>
 			<br>
-			<h5>This site.</h5>	
-			<p>Lovingly hand-coded. Responsible for approximately 324398 hours of sleep debt. Body copy is Roboto and Headers are in Lato. </p>
+			<h5>Elsewhere.</h5>	
+			<p><a href="http://ceciliayang.com" target="new">Cargo</a>
+			<br><a href="http://www.facebook.com/ceciliayang" target="new">Facebook</a>
+			<br><a href="http://ceciliayang.tumblr.com/" target="new">Tumblr</a>
+			<br><a href="/blog">Blog</a>				
+							
+			</p>
 		</div>
-
-	</div>
-
-	<div class="dot-separator">
 	</div>
 	
-	<div class="scrollblock">
-		<div class="row">
-			<div class="span12">
-				<h1>The breakdown</h1>
-
-				<br><br>Insert some graphs about my activities
-			</div>
+	<div class="dot-separator"></div>
+	
+	
+	<div class="row" style="padding-bottom:30px;">
+		<div class="span12">
+			<h1>The Breakdown</h1>
 		</div>
-	</div>
-		
-	<div class="dot-separator">
 	</div>
 	
-	<div class="scrollblock">
-		<div class="row">
-				<h1>Things I love</h1>
+	<div class="row" style="padding-bottom:30px;">
+		<div class="span2 rowtop-pad">
+			<h4>For hire:</h4>
 		</div>
-		<div class="row">
-			<div class="span2">
-				Things that glow or play with light
-				<br>Bioluminescence
-				<br>Northern Lights
-				<br>Cenotes
-				<br>Nebula
-			</div>
-			<div class="span2">
-			Writers
+		<div class="span10">
+			<br><img src="img/graph-forhire.png">
+		</div>
+	</div>
+	
+	<div class="row" style="padding-bottom:30px;">
+		<div class="span2 rowtop-pad">
+			<h4>Not for hire:</h4>
+		</div>
+		<div class="span10">
+			<br><img src="img/graph-notforhire.png">
+		</div>
+	</div>
+
+	
+	<div class="dot-separator"></div>
+
+	<div class="row" style="padding-bottom:30px;">
+		<div class="span12">
+			<h1>Things I Love</h1>
+			<br>
+			<h3>Things that glow and/or play with light
+			<br>Tropical fruit
+			<br>Crazy plants and animals
+			<br>Natural histories
+			<br>Behavioral psychology
 			<br>Borges
-			<br>Cortazar</div>
-			<div class="span2">
-			</div>
+			<br>Cortazar
+			<br>Roald Dahl
+			<br>Words
 		</div>
 	</div>
+
+
 </div>
