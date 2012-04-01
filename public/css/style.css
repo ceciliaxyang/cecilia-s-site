@@ -106,11 +106,60 @@ input {
 	    background-color: #FFFFFF;
 	    border-top: 1px solid #EAEAEA;
 	    padding-bottom: 40px;
-	    padding-top: 40px;
+	    padding-top: 70px;
 		text-align: center;
 		font-size: 16px;
 }
 
+.footer .social {
+	
+	display:block;
+
+}
+
+.footer .tumblr {
+  padding: 20px 40px;
+  background-image: url("../img/tumblr.png");
+  background-repeat:no-repeat;
+}
+
+.footer .tumblr:hover {
+  background-image: url("../img/tumblrhover.png");
+  background-repeat:no-repeat;
+}
+
+.footer .twitter {
+  padding: 20px 40px;
+  background-image: url("../img/twitter.png");
+  background-repeat:no-repeat;
+}
+
+.footer .twitter:hover {
+  background-image: url("../img/twitterhover.png");
+  background-repeat:no-repeat;
+}
+
+.footer .rss {
+  padding: 20px 40px;
+  background-image: url("../img/rss.png");
+  background-repeat:no-repeat;
+}
+
+.footer .rss:hover {
+  background-image: url("../img/rsshover.png");
+  background-repeat:no-repeat;
+}
+
+.footer .contact {
+  padding: 20px 40px;
+  background-image: url("../img/contact.png");
+  background-repeat:no-repeat;
+}
+
+.footer .contact:hover {
+  background-image: url("../img/contacthover.png");
+  background-repeat:no-repeat;
+}
 
 .jumbotron {
     position: relative;
