@@ -9,6 +9,11 @@ body {
 a {
   color: #3cb9c5;
   text-decoration: none;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 a:hover {
   text-decoration: underline;
@@ -17,6 +22,12 @@ a:hover {
 .content {
     padding-bottom: 0px;
     padding-top: 140px;
+}
+
+.content a:hover {
+  background-color: #7bf8d6;
+  border-radius: 0 0 0 0;
+  color: #148495;
 }
 
 p {
@@ -100,7 +111,48 @@ input {
 	height: 40px;
 }
 
-/* NAVIGATION BARS */
+::selection {
+	background: #7bf8d6; /* Safari */
+	}
+::-moz-selection {
+	background: #7bf8d6; /* Firefox */
+}
+
+/* BRAND */
+
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 2px 70px 0px;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/logo-02.png");
+  background-repeat:no-repeat;
+}
+
+.navbar .brand:hover {
+  background-position: 0 -56;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-ms-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
+}
+
+.navbar .navbar-text {
+  margin-bottom: 0;
+  line-height: 40px;
+  color: #999999;
+  text-shadow: 0 1px #FFFFFF;
+
+}
+.navbar .navbar-text a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+
+/* SUB-NAVIGATION BARS */
 
 
 .jumbotron {
@@ -184,17 +236,18 @@ input {
 /* BREAKDOWN */
 
 .bar {
-	background: #7bf8d6; /* Old browsers */
-	background: -moz-linear-gradient(top,  #7bf8d6 8%, #3cb9c5 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#7bf8d6), color-stop(100%,#3cb9c5)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #7bf8d6 8%,#3cb9c5 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #7bf8d6 8%,#3cb9c5 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #7bf8d6 8%,#3cb9c5 100%); /* IE10+ */
-	background: linear-gradient(top,  #7bf8d6 8%,#3cb9c5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bf8d6', endColorstr='#3cb9c5',GradientType=0 ); /* IE6-9 */
 	width: 100px;
 	margin: 0 0px 10px 0;
 	float: left;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#7bf8d6 20%), to(#3cb9c5));
+	background-image: -webkit-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: -moz-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: -o-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: -ms-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: linear-gradient(to bottom, #7bf8d6 20%, #3cb9c5);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
 }
 	
 	#bar1 {height: 140px;}
@@ -258,6 +311,7 @@ ul.breakdown li {
   padding: 20px 40px;
   background-image: url("../img/tumblr.png");
   background-repeat:no-repeat;
+
 }
 
 .footer .tumblr:hover {
