@@ -1,3 +1,21 @@
+<script>
+
+$(document).ready(function() {
+    var scrollorama = $.scrollorama({
+        enablePin:false,
+        blocks:'.scrollblock',
+    });
+
+
+    // animate the parallaxing
+
+   scrollorama.animate('#blockfade',{ delay: 0, duration: 200, property:'opacity', start:1.0, end: 0 });  
+
+});
+
+</script>
+
+
 <div class="container" data-spy="scroll" data-target=".subnav" data-offset="50">
 			
 			A few featured projects below.  You can view more stuff on <a href="http://www.ceciliayang.com">Cargo</a>.<br><br>	
@@ -19,7 +37,7 @@
 ================================================== -->
 	<section id="project1">
 		<div class="scrollblock">
-			<div class="row">
+			<div class="row" id="blockfade">
 				<div class="span4">
 					<h2><span style="background-color: #3CB9C5;">Jawbone</span><br><span style="background-color: #3CB9C5;">Mobile Site</span></h2>
 						<br>I designed the mobile-optimized site for Jawbone.com. 
