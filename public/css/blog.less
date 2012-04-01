@@ -1,0 +1,30 @@
+// Blog-specific styling
+
+// Variables used in calculations used to maintain vertical rhythm.
+// http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/
+@base-scale: 0.88;
+@base-font: @base-scale * 1em;
+@vertical-rhythm: 1.75em;
+@base-vertical-margin: 1.75em;
+
+body {
+//  background-color: black;
+}
+
+section.pages,
+section.articles {
+  & > ol {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+ol, p, pre, ul {
+  margin: 0;
+  margin-bottom: @base-vertical-margin;
+}
+
+h1 {
+  margin-bottom: 10px;
+}

@@ -18,39 +18,6 @@ $border-style: 1px dashed $border-color
 @mixin text-shadow
   text-shadow: 0 2px 3px #ddd
 
-body
-  background-color: black
-  font: ($base-font * 1.05) Georgia, serif
-  line-height: $vertical-rhythm
-  color: $base-color
-
-header[role=banner]
-  h1,
-  h2
-    margin: 0
-    line-height: 1.2em
-    font-weight: normal
-  h1
-    font-size: 327%
-    @include text-shadow
-  h2
-    color: $meta-color
-    font-size: 1em
-
-h1, h2, h3, h4, h5, h6
-  font-family: Georgia, serif
-h1
-  @include adjust-font-size($h1-scale, 0.6, 0.4)
-  font-weight: normal
-h2
-  @include adjust-font-size($h2-scale, 1.5, 0.5)
-  font-weight: normal
-h3
-  @include adjust-font-size($h3-scale, 1.5, 0.5)
-  font-weight: normal
-h4
-  @include adjust-font-size($h4-scale, 2, 0)
-
 ol,
 p,
 pre,
@@ -64,10 +31,10 @@ li
 blockquote
   margin: $base-vertical-margin 0
   padding: 0 $base-vertical-margin
-  
+
   font-style: italic
   color: $base-color + #555
-  
+
 pre
   padding: ($vertical-rhythm / 2) 1em
   overflow: auto
