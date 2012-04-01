@@ -9,24 +9,26 @@ $(document).ready(function() {
 
     // animate the parallaxing
 
-   scrollorama.animate('#blockfade',{ delay: 0, duration: 200, property:'opacity', start:1.0, end: 0 });  
+   scrollorama.animate('#blockfade0',{ delay: 30, duration: 200, property:'opacity', start:1.0, end: 0 });  
+   //scrollorama.animate('#blockfade1',{ delay: 30, duration: 200, property:'opacity', start:1.0, end: 0 });  
+
 
 });
 
 </script>
 
 
-<div class="container" data-spy="scroll" data-target=".subnav" data-offset="50">
+<div class="container">
 			
 			A few featured projects below.  You can view more stuff on <a href="http://www.ceciliayang.com">Cargo</a>.<br><br>	
 			
 			<header class="jumbotron subhead">
-			  <div class="subnav">
+			  <div class="subnav" id="projectnav">
 			    <ul class="nav nav-pills">				
-			      <li><a href="#project1">Jawbone Mobile Site</a></li>
-			      <li><a href="#project2">UP Demo for iPad</a></li>
-			      <li><a href="#project3">JAMBOX Landing Page</a></li>
-			      <li><a href="#project4">Tavern Books</a></li>
+			      <li><a href="#project1anchor">Jawbone Mobile Site</a></li>
+			      <li><a href="#project2anchor">UP Demo for iPad</a></li>
+			      <li><a href="#project3anchor">JAMBOX Landing Page</a></li>
+			      <li><a href="#project4anchor">Tavern Books</a></li>
 			    </ul>
 			  </div>
 			</header>
@@ -35,31 +37,32 @@ $(document).ready(function() {
 			
 <!-- Project 1
 ================================================== -->
-	<section id="project1">
-		<div class="scrollblock">
-			<div class="row" id="blockfade">
-				<div class="span4">
-					<h2><span style="background-color: #3CB9C5;">Jawbone</span><br><span style="background-color: #3CB9C5;">Mobile Site</span></h2>
-						<br>I designed the mobile-optimized site for Jawbone.com. 
-						<br><br><h4>ROLES:</h4>
-						Interaction Design
-						<br>Visual Design
-				</div>
-				<div class="span7 offset1">
-					<img src="img/work/mobile/mobile1.png">
-				</div>
+<a class="anchor" id="project1anchor">&nbsp;</a>
+<section id="project1">
+	<div class="scrollblock">
+		<div class="row" id="blockfade0">
+			<div class="span4">
+				<h2><span style="background-color: #3CB9C5;">Jawbone</span><br><span style="background-color: #3CB9C5;">Mobile Site</span></h2>
+					<br>I designed the mobile-optimized site for Jawbone.com. 
+					<br><br><h4>ROLES:</h4>
+					Interaction Design
+					<br>Visual Design
+			</div>
+			<div class="span7 offset1">
+				<img src="img/work/mobile/mobile1.png">
 			</div>
 		</div>
-	</section>
-	
-	<div class="dot-separator"></div>
+	</div>
+</section>
+
+<div class="dot-separator"></div>
 
 <!-- Project 2
 ================================================== -->
-
+<a class="anchor" id="project2anchor">&nbsp;</a>
 <section id="project2">
 	<div class="scrollblock">
-	    <div class="row">
+		<div class="row">
 	    	<div class="span4">
 					<h2><span style="background-color: #3CB9C5;">Up Demo</span><br><span style="background-color: #3CB9C5;">for iPad</span></h2>
 					<br>I designed an iPad app displayed at AT&T stores that customers could interact with to learn more about the Jawbone UP product and its key features.
@@ -117,6 +120,7 @@ $(document).ready(function() {
 
 <!-- Project 3
 ================================================== -->
+<a class="anchor" id="project3anchor">&nbsp;</a>
 <section id="project3">
 	<div class="scrollblock">
 		<div class="row">
@@ -155,6 +159,7 @@ $(document).ready(function() {
 
 <!-- Project 4
 ================================================== -->
+<a class="anchor" id="project4anchor">&nbsp;</a>
 <section id="project4">
 	<div class="scrollblock">
 		<div class="row">
@@ -196,7 +201,6 @@ $(document).ready(function() {
 	  }
 	}
 	
+	$('#projectnav').scrollspy();
+	
 </script>
-
-<script src='js/bootstrap-scrollspy.js'></script>
-<script>    $('#navbar').scrollspy() </script>

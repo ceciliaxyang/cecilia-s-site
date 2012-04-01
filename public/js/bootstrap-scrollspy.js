@@ -25,6 +25,9 @@
    * ========================== */
 
   function ScrollSpy( element, options) {
+	
+	console.log("initialized");
+	
     var process = $.proxy(this.process, this)
       , $element = $(element).is('body') ? $(window) : $(element)
       , href
@@ -56,6 +59,9 @@
       }
 
     , process: function () {
+	
+		console.log("processing");
+	
         var scrollTop = this.$scrollElement.scrollTop() + this.options.offset
           , offsets = this.offsets
           , targets = this.targets
@@ -71,6 +77,9 @@
       }
 
     , activate: function (target) {
+	
+		console.log("activating");
+	
         var active
 
         this.activeTarget = target
@@ -97,6 +106,7 @@
 
   $.fn.scrollspy = function ( option ) {
     return this.each(function () {
+	  console.log('from scrollspy');
       var $this = $(this)
         , data = $this.data('scrollspy')
         , options = typeof option == 'object' && option
