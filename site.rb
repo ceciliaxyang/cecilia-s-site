@@ -13,9 +13,9 @@ class Site < Sinatra::Base
     erb :work
   end
 
-  # get '/blog' do
-  #   erb :blog
-  # end
+  get '/blogtemp' do
+    erb :blogtemp
+  end
 
   get '/info' do
     erb :info

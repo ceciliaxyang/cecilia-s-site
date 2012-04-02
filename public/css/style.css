@@ -9,11 +9,11 @@ body {
 a {
   color: #3cb9c5;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 a:hover {
   text-decoration: underline;
@@ -54,7 +54,7 @@ p small {
     letter-spacing: -2px;
     margin: 0 10 10px;
     text-indent: -6px;
-  color: #333333;
+	color: #333333;
 }
 
 .quoter {
@@ -76,31 +76,31 @@ h6 {
 }
 
 h1 {
-  font: 100 72px/72px "lato";
+	font: 100 72px/72px "lato";
     letter-spacing: -2px;
     text-transform: uppercase;
 }
 
 h2 {
-  font: 50px/65px 'RobotoThin';
+	font: 50px/65px 'RobotoThin';
     text-transform: none;
-  color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 h3 {
-  font: 40px/50px 'RobotoThin';
+	font: 40px/50px 'RobotoThin';
     text-transform: none;
 }
 
 h4 {
-    font: 20px/40px "RobotoRegular";
+  	font: 20px/40px "RobotoRegular";
     text-transform: uppercase;
 }
 
 h5 {
-  font: 18px/30px "RobotoRegular";
-  text-transform: uppercase;
-  color: #999;
+	font: 18px/30px "RobotoRegular";
+	text-transform: uppercase;
+	color: #999;
 }
 
 h6 {
@@ -108,21 +108,21 @@ h6 {
 }
 
 input {
-  height: 40px;
+	height: 40px;
 }
 
 ::selection {
-  background: #7bf8d6; /* Safari */
-  }
+	background: #7bf8d6; /* Safari */
+	}
 ::-moz-selection {
-  background: #7bf8d6; /* Firefox */
+	background: #7bf8d6; /* Firefox */
 }
 
 /* ANCHOR TAGS */
 
 a.anchor {
-  position:relative; 
-  top:-150px;
+	position:relative; 
+	top:-150px;
 }
 
 /* BRAND */
@@ -139,11 +139,11 @@ a.anchor {
 
 .navbar .brand:hover {
   background-position: 0 -56;
-  -webkit-transition: background 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out;
-  -ms-transition: background 0.5s ease-in-out;
-  -o-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-ms-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
 }
 
 .navbar .navbar-text {
@@ -203,12 +203,12 @@ a.anchor {
 
 .subnav-fixed .nav > .active > a, .subnav .nav > .active > a:hover {
     //background-color: #E9E9E9;
-  background-color: #3cb9c5;
+	background-color: #3cb9c5;
     border-left: 0 none;
     border-right-color: #DDDDDD;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05) inset;
     //color: #777777;
-  color: #FFFFFF;
+	color: #FFFFFF;
     padding-left: 13px;
 }
 .subnav .nav > .active > a .caret, .subnav .nav > .active > a:hover .caret {
@@ -231,8 +231,8 @@ a.anchor {
     border-width: 0 0 1px;
     box-shadow: 0 1px 0 #FFFFFF inset, 0 0px 1px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.90);
-     padding-top: 0px;
-  position: fixed;
+   	padding-top: 0px;
+	position: fixed;
     top: 88px;
     left: 0;
     right: 0;
@@ -254,53 +254,53 @@ a.anchor {
 /* BREAKDOWN */
 
 .bar {
-  width: 100px;
-  margin: 0 0px 10px 0;
-  float: left;
-  background-image: -webkit-gradient(linear, center top, center bottom, from(#7bf8d6 20%), to(#3cb9c5));
-  background-image: -webkit-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
-  background-image: -moz-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
-  background-image: -o-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
-  background-image: -ms-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
-  background-image: linear-gradient(to bottom, #7bf8d6 20%, #3cb9c5);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
-  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
+	width: 100px;
+	margin: 0 0px 10px 0;
+	float: left;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#7bf8d6 20%), to(#3cb9c5));
+	background-image: -webkit-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: -moz-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: -o-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: -ms-linear-gradient(top, #7bf8d6 20%, #3cb9c5);
+	background-image: linear-gradient(to bottom, #7bf8d6 20%, #3cb9c5);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.73);
 }
-  
-  #bar1 {height: 140px;}
-  
-  #bar2 {height: 110px; margin-top: 30px;}
-  
-  #bar3 {height: 85px; margin-top: 55px;}
-  
-  #bar4 {height: 60px; margin-top: 80px;}
-  
-  #bar5 {height: 50px; margin-top: 90px;}
-  
-  #bar6 {height: 140px;}
-  
-  #bar7 {height: 120px; margin-top: 20px;}
-  
-  #bar8 {height: 85px; margin-top: 55px;}
-  
-  #bar9 {height: 60px; margin-top: 80px;}
-  
-  #bar10 {height: 50px; margin-top: 90px;}
-  
-  #bar11 {height: 25px; margin-top: 115px;}
-  
+	
+	#bar1 {height: 140px;}
+	
+	#bar2 {height: 110px; margin-top: 30px;}
+	
+	#bar3 {height: 85px; margin-top: 55px;}
+	
+	#bar4 {height: 60px; margin-top: 80px;}
+	
+	#bar5 {height: 50px; margin-top: 90px;}
+	
+	#bar6 {height: 140px;}
+	
+	#bar7 {height: 120px; margin-top: 20px;}
+	
+	#bar8 {height: 85px; margin-top: 55px;}
+	
+	#bar9 {height: 60px; margin-top: 80px;}
+	
+	#bar10 {height: 50px; margin-top: 90px;}
+	
+	#bar11 {height: 25px; margin-top: 115px;}
+	
 
 ul.breakdown {
-    color: #666666;
+  	color: #666666;
 }
 
 ul.breakdown li {
-  width: 100px;
-  display: inline;
-  float: left;
-  list-style: none;
-  margin: 20px 25px 0 0;
+	width: 100px;
+	display: inline;
+	float: left;
+	list-style: none;
+	margin: 20px 25px 0 0;
 }
 
 
@@ -310,16 +310,18 @@ ul.breakdown li {
 /* FOOTER */
 
 .footer {
-    background-color: #FFFFFF;
-    border-top: 1px solid #EAEAEA;
-    padding-bottom: 40px;
-    padding-top: 70px;
-    text-align: center;
-    font-size: 16px;
+	
+	    background-color: #FFFFFF;
+	    border-top: 1px solid #EAEAEA;
+	    padding-bottom: 40px;
+	    padding-top: 70px;
+		text-align: center;
+		font-size: 16px;
 }
 
 .footer .social {
-  display:block;
+	
+	display:block;
 
 }
 
