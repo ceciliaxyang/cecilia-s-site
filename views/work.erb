@@ -1,23 +1,3 @@
-<script>
-
-$(document).ready(function() {
-    var scrollorama = $.scrollorama({
-        enablePin:false,
-        blocks:'.scrollblock',
-    });
-
-
-    // animate the parallaxing
-
-   scrollorama.animate('#blockfade0',{ delay: 30, duration: 200, property:'opacity', start:1.0, end: 0 });  
-   //scrollorama.animate('#blockfade1',{ delay: 30, duration: 200, property:'opacity', start:1.0, end: 0 });  
-
-
-});
-
-</script>
-
-
 <div class="container">
 			
 			A few featured projects below.  You can view more stuff on <a href="http://www.ceciliayang.com">Cargo</a>.<br><br>	
@@ -39,8 +19,9 @@ $(document).ready(function() {
 ================================================== -->
 <a class="anchor" id="project1anchor">&nbsp;</a>
 <section id="project1">
+	
 	<div class="scrollblock">
-		<div class="row" id="blockfade0">
+		<div class="row">
 			<div class="span4">
 				<h2><span style="background-color: #3CB9C5;">Jawbone</span><br><span style="background-color: #3CB9C5;">Mobile Site</span></h2>
 					<br>I designed the mobile-optimized site for Jawbone.com. 
@@ -49,10 +30,46 @@ $(document).ready(function() {
 					<br>Visual Design
 			</div>
 			<div class="span7 offset1">
-				<img src="img/work/mobile/mobile1.png">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile1.png">
+				
 			</div>
 		</div>
 	</div>
+	
+	<div class="scrollblock-longest">
+		<div class="row">
+			<div class="span4" style:"float:left;">
+					<h3>Screenshots</h3>
+					The mobile site distills Jawbone's web content into what's most relevant to the mobile user: key product info and support.
+					<br><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4 offset2">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile2.png">
+			</div>
+			<div class="span4">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile3.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4 offset2">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile4.png">
+			</div>
+			<div class="span4">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile5.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4 offset2">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile6.png">
+			</div>
+			<div class="span4">
+				<img class="lazy" src="img/white.gif" data-original="img/work/mobile/mobile7.png">
+			</div>
+		</div>
+	</div>
+	
 </section>
 
 <div class="dot-separator"></div>
@@ -72,7 +89,7 @@ $(document).ready(function() {
 			</div>
 	
 		    <div class="span7 offset1">
-					<img src="img/work/updemo/updemo1.png">
+					<img class="lazy" src="img/white.gif" data-original="img/work/updemo/updemo1.png">
 			</div>
 	    </div>
 	</div>
@@ -85,7 +102,7 @@ $(document).ready(function() {
 						<br><br>From each of these screens, customers could launch relevant videos and image galleries.
 			</div>
 		    <div class="span7 offset1">
-					<img src="img/work/updemo/updemo2.png">
+					<img class="lazy" src="img/white.gif" data-original="img/work/updemo/updemo2.png">
 			</div>
 	    </div>
 	</div>
@@ -97,7 +114,7 @@ $(document).ready(function() {
 					Accessible from the home screen, this view allowed the users to peek into the nifty technology behind the band.
 			</div>
 		    <div class="span7 offset1">
-					<img src="img/work/updemo/updemo3.png">
+					<img class="lazy" src="img/white.gif" data-original="img/work/updemo/updemo3.png">
 			</div>
 	    </div>
 	</div>
@@ -110,7 +127,7 @@ $(document).ready(function() {
 					<br><br>
 					To swipe between images, users could tap the left and right arrows, or swipe (as implied by the breadcrumbs below the images).			</div>
 		    <div class="span7 offset1">
-					<img src="img/work/updemo/updemo4.png">
+					<img class="lazy" src="img/white.gif" data-original="img/work/updemo/updemo4.png">
 			</div>
 	    </div>
 	</div>
@@ -133,7 +150,7 @@ $(document).ready(function() {
 			</div>
 	
 		    <div class="span7 offset1">
-					<img src="img/work/jamboxlanding/jamboxlanding1.png">
+					<img class="lazy" src="img/white.gif" data-original="img/work/jamboxlanding/jamboxlanding1.png">
 			</div>
 		</div>
 	</div>
@@ -148,7 +165,7 @@ $(document).ready(function() {
 			</div>
 			
 			<div class="span7 offset1">
-				<img src="img/work/jamboxlanding/jamboxlanding2.png">
+				<img class="lazy" src="img/white.gif" data-original="img/work/jamboxlanding/jamboxlanding2.png">
 			</div>
 			
 		</div>
@@ -173,7 +190,7 @@ $(document).ready(function() {
 					<br>Interaction Design
 				</div>
 				<div class="span7 offset1">
-					<img src="img/work/tavernbooks/tavernbooks3.png">
+					<img class="lazy" src="img/white.gif" data-original="img/work/tavernbooks/tavernbooks3.png">
 				</div>
 		</div>
 	</div>
@@ -182,12 +199,12 @@ $(document).ready(function() {
 		<div class="row">
 			
 			<div class="span4">
-				<h3>Pressmark</h3>
-				I designed the Crow & Key pressmark used on <a href="http://www.tavernbooks.com">Tavern Book</a>'s website, letterheads, and books, which are mostly "lyrically intense, sometimes surreal, and often driven by serious matters."
+				<h3 class="rowtop-pad">Pressmark</h3>
+				I designed the Crow & Key pressmark used on <a href="http://www.tavernbooks.com">Tavern Book</a>'s website, letterheads, and books. It fits the tone of the books, which are often "lyrically intense, sometimes surreal, and often driven by serious matters."
 			</div>
 			
 			<div class="span6 offset2">
-				<img src="img/work/tavernbooks/tavernbooks4.jpg">
+				<img class="lazy" src="img/white.gif" data-original="img/work/tavernbooks/tavernbooks4.jpg">
 			</div>
 			
 		</div>
@@ -199,10 +216,10 @@ $(document).ready(function() {
 			<div class="span4">
 					<h3>Illustrations</h3>
 					I create illustrations for the books (hand-stitched pamphlets) and broadsides (made from 80# cardstock).
-					<br><br><br>A chrysanthemum for "BUSON: HAIKU," by Yosa Buson. Translated by Franz Wright.
+					<br><br><br>A chrysanthemum for "BUSON: HAIKU," by Yosa Buson (translated by Franz Wright).
 			</div>
 			<div class="span7 offset1">
-				<img src="img/chrysanthemum.png">
+				<img class="lazy" src="img/white.gif" data-original="img/chrysanthemum.png">
 			</div>
 		</div>
 	</div>
@@ -210,12 +227,12 @@ $(document).ready(function() {
 	<div class="scrollblock-long">
 		<div class="row">
 			<div class="span4">
-					An olive tree for "Night of Shooting Stars," by Leonardo Sinisgalli.
+					An olive tree for "Night of Shooting Stars," by Leonardo Sinisgalli.<br>
 			</div>
 		</div>
 		<div class="row">
 			<div class="span9 offset3">
-				<img src="img/work/tavernbooks/tavernbooks7.png">
+				<img class="lazy" src="img/white.gif" data-original="img/work/tavernbooks/tavernbooks7.png">
 			</div>
 		</div>
 	</div>
@@ -223,12 +240,12 @@ $(document).ready(function() {
 	<div class="scrollblock">
 		<div class="row">
 			<div class="span4">
-					A jellyfish for "Notes on Sea & Shore," by Greta Wrolstad.
+					A jellyfish for "Notes on Sea & Shore," by Greta Wrolstad.<br><br>
 			</div>
 		</div>
 		<div class="row">
 			<div class="span12">
-				<img src="img/jellyfish.png">
+				<img class="lazy" src="img/white.gif" data-original="img/jellyfish.png">
 			</div>
 		</div>
 	</div>
@@ -239,7 +256,7 @@ $(document).ready(function() {
 					A bony seahorse for "Ocean," by Joseph Millar.
 			</div>
 			<div class="span7 offset1">
-				<img src="img/work/tavernbooks/tavernbooks5.png">
+				<img class="lazy" src="img/white.gif" data-original="img/work/tavernbooks/tavernbooks5.png">
 			</div>
 		</div>
 	</div>
@@ -281,3 +298,36 @@ $(document).ready(function() {
 	$('#projectnav').scrollspy();
 	
 </script>
+
+  <script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+//$(window).bind("unload", function() {});
+
+/*
+window.onpopstate = function() { 
+    window.onpopstate = function() { 
+        $("img").trigger("appear");
+    };
+};
+*/
+      $(function() {
+//	alert("bar");
+          $("img").lazyload({
+              effect : "fadeIn"
+              /*
+              appear : function(elements_left, settings) {
+                  console.log("appear");
+                  console.log(elements_left);
+                  //console.log(this, elements_left, settings);
+              },
+              load : function(elements_left, settings) {
+                  console.log("load");
+                  console.log(elements_left);
+                  //console.log(this, elements_left, settings);
+              }
+              */
+          });
+
+
+      });
+  </script>

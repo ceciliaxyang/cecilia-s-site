@@ -19,6 +19,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.popup {
+  text-decoration: none; 
+  border-bottom:1px dashed;
+}
+
 .content {
     padding-bottom: 0px;
     padding-top: 140px;
@@ -28,6 +33,7 @@ a:hover {
   background-color: #7bf8d6;
   border-radius: 0 0 0 0;
   color: #148495;
+  text-decoration: none;
 }
 
 p {
@@ -109,7 +115,9 @@ h5 {
 }
 
 h6 {
-
+	font: 16px/24px "RobotoRegular";
+	text-transform: uppercase;
+	color: #999;
 }
 
 input {
@@ -129,6 +137,7 @@ a.anchor {
 	position:relative; 
 	top:-150px;
 }
+
 
 /* BRAND */
 
@@ -254,6 +263,13 @@ a.anchor {
 }
 
 
+/* CONTENT */
+
+
+.rowtop-pad {
+  padding-top: 90px;
+}
+
 
 
 /* BREAKDOWN */
@@ -373,8 +389,4 @@ ul.breakdown li {
 .footer .contact:hover {
   background-image: url("../img/contacthover.png");
   background-repeat:no-repeat;
-}
-
-.rowtop-pad {
-  padding-top: 50px;
 }
