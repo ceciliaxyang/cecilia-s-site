@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet/less" type="text/css" href="css/style.less">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic' rel='stylesheet' type='text/css'>
 	
 	<link rel="shortcut icon" href="img/favicon.ico">
 	
@@ -15,9 +16,40 @@
     <script src='js/less-1.3.0.min.js'></script>
     <script src='js/jquery.scrollorama.js'></script>
 	<script src='js/bootstrap-scrollspy.js'></script>
+	<script type="text/javascript" src="javascripts/jquery.tipsy.js"></script>
+	<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
 
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic' rel='stylesheet' type='text/css'>
-	
+	  <script type="text/javascript" charset="utf-8">
+	//$(window).bind("unload", function() {});
+
+	/*
+	window.onpopstate = function() { 
+	    window.onpopstate = function() { 
+	        $("img").trigger("appear");
+	    };
+	};
+	*/
+	      $(function() {
+	//	alert("bar");
+	          $("img").lazyload({
+	              effect : "fadeIn"
+	              /*
+	              appear : function(elements_left, settings) {
+	                  console.log("appear");
+	                  console.log(elements_left);
+	                  //console.log(this, elements_left, settings);
+	              },
+	              load : function(elements_left, settings) {
+	                  console.log("load");
+	                  console.log(elements_left);
+	                  //console.log(this, elements_left, settings);
+	              }
+	              */
+	          });
+
+
+	      });
+	  </script>
 
 </head>
 
@@ -33,7 +65,7 @@
 					<li class="divider-vertical">
 					<li><a href="http://ceciliayang.com/" target="new">Archives  <i class="icon-external-link"></i></a></li>
 					<li class="divider-vertical">
-					<li><a href="/blogtemp" target="new">Blog</a></li>
+					<li><a href="/blogtemp">Blog</a></li>
 					<li class="divider-vertical">
 					<li><a href="/info">Info</a></li>
 				</ul>

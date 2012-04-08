@@ -1,3 +1,115 @@
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/* SCAFFOLDING */
+
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
+
+[class*="span"] {
+  float: left;
+  margin-left: 20px;
+}
+.span1 {
+  width: 60px;
+}
+.span2 {
+  width: 140px;
+}
+.span3 {
+  width: 220px;
+}
+.span4 {
+  width: 300px;
+}
+.span5 {
+  width: 380px;
+}
+.span6 {
+  width: 460px;
+}
+.span7 {
+  width: 540px;
+}
+.span8 {
+  width: 620px;
+}
+.span9 {
+  width: 700px;
+}
+.span10 {
+  width: 780px;
+}
+.span11 {
+  width: 860px;
+}
+.span12, .container {
+  width: 940px;
+}
+.offset1 {
+  margin-left: 100px;
+}
+.offset2 {
+  margin-left: 180px;
+}
+.offset3 {
+  margin-left: 260px;
+}
+.offset4 {
+  margin-left: 340px;
+}
+.offset5 {
+  margin-left: 420px;
+}
+.offset6 {
+  margin-left: 500px;
+}
+.offset7 {
+  margin-left: 580px;
+}
+.offset8 {
+  margin-left: 660px;
+}
+.offset9 {
+  margin-left: 740px;
+}
+.offset10 {
+  margin-left: 820px;
+}
+.offset11 {
+  margin-left: 900px;
+}
+
+.container {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+.container:before, .container:after {
+  display: table;
+  content: "";
+}
+.container:after {
+  clear: both;
+}
+
+/* TEXT STYLES */
+
+
 body {
   margin: 0;
   font-family: 'RobotoLight','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -19,7 +131,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.popup {
+.doubleline {
   text-decoration: none; 
   border-bottom:1px dashed;
 }
@@ -38,17 +150,18 @@ a:hover {
 
 p {
   margin: 0 0 9px;
-  font-family: "RobotoThin", Helvetica, Arial, sans-serif;
+  font-family: "RobotoThin", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #999999;
 }
+
 p small {
   font-size: 11px;
 }
 
 .date {
-  font-family: "RobotoRegular", Helvetica, Arial, sans-serif;
+  font-family: "RobotoRegular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333333;
 }
 
@@ -61,7 +174,7 @@ p small {
 }
 
 .quote {
-    font: 100 56px/60px "lato";
+    font: 100 56px/60px "lato", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: -2px;
     margin: 0 10 10px;
     text-indent: -6px;
@@ -70,7 +183,7 @@ p small {
 
 .quoter {
     color: #999999;
-    font: 20px/20px 'RobotoRegular';
+    font: 20px/20px 'RobotoRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-indent: -10px;
     text-shadow: 0 1px #FFFFFF;
@@ -87,35 +200,35 @@ h6 {
 }
 
 h1 {
-	font: 100 72px/72px "lato";
+	font: 100 72px/72px "lato", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: -2px;
     text-transform: uppercase;
 }
 
 h2 {
-	font: 50px/65px 'RobotoThin';
+	font: 50px/65px 'RobotoThin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: none;
 	color: #FFFFFF;
 }
 
 h3 {
-	font: 40px/50px 'RobotoThin';
+	font: 40px/50px 'RobotoThin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: none;
 }
 
 h4 {
-  	font: 20px/40px "RobotoRegular";
+  	font: 20px/40px "RobotoRegular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
 h5 {
-	font: 18px/30px "RobotoRegular";
+	font: 18px/30px "RobotoRegular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	color: #999;
 }
 
 h6 {
-	font: 16px/24px "RobotoRegular";
+	font: 16px/24px "RobotoRegular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	color: #999;
 }
@@ -138,21 +251,27 @@ a.anchor {
 	top:-150px;
 }
 
-/* TEAL BUTTON */
+/* BUTTONS */
 
-button.tealbutton {
-	font-family: 'RobotoLight', Arial, Helvetica, sans-serif;
+button {
+	display: inline-block;
+  	font-family: 'RobotoLight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #ffffff;
+	text-align: center;
+  	vertical-align: middle;
 	padding: 10px 40px;
-	background: -moz-linear-gradient(
+  	background-color: #3cbac5;
+	background-image: -moz-linear-gradient(
 		top,
 		#7bf8d7 0%,
 		#3cbac5);
-	background: -webkit-gradient(
+	background-image: -webkit-gradient(
 		linear, left top, left bottom, 
 		from(#7bf8d7),
 		to(#3cbac5));
+	background-repeat: repeat-x;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7bf8d7', endColorstr='#3cbac5', GradientType=0);
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -166,9 +285,47 @@ button.tealbutton {
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,0.2);
+	cursor: pointer;
+	  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
+button:hover {
+  text-decoration: none;
+  background-color: #3cbac5;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
 
+button:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+button.active, button:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: #666666;
+  border: 1px solid #CCCCCC;
+}
+
+button.disabled, button[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 
 /* BRAND */
 
@@ -311,6 +468,9 @@ button.tealbutton {
 .rowtop-pad {
   padding-top: 90px;
 }
+
+
+/* BUBBLES */
 
 
 
