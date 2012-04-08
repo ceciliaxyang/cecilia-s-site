@@ -299,7 +299,9 @@
 	<div class="row">
 		<div class="span12"><br><br><br><br>
 			<h3>Thanks for checking out my work!</h3>
-			<br><br>You can view more stuff in the <a href="http://www.ceciliayang.com">archives <i class="icon-external-link"></i></a>.
+			<br>You can view more stuff in the <a href="http://www.ceciliayang.com">archives <i class="icon-external-link"></i></a>.
+			<br><br><br><br>
+			<a id="scrlTop" title="Top" href="#"><button type="button" name="" value="" class="tealbutton">Back to Top</button></a>
 		</div>
 	</div>
 </div>
@@ -339,6 +341,7 @@
 </script>
 
   <script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+
   <script type="text/javascript" charset="utf-8">
 //$(window).bind("unload", function() {});
 
@@ -369,4 +372,17 @@ window.onpopstate = function() {
 
 
       });
+  </script>
+
+   <script type="text/javascript" language="javascript">
+       $(function () {
+
+           $('#scrlTop').click(function () {
+               $('html, body').animate({
+                   scrollTop: '0px'
+               },
+               1500);
+               return false;
+           });
+       });
   </script>
