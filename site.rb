@@ -20,6 +20,10 @@ class Site < Sinatra::Base
   get '/info' do
     erb :info
   end
+  
+  get '/instagram' do
+    erb :instagram
+  end
 
   not_found do
     erb :notfound
