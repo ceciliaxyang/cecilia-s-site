@@ -6,7 +6,7 @@ class Site < Sinatra::Base
   get '/' do
     @seconds_old = Time.now - Time.local(1987, 3, 12)
     @age = @seconds_old / 365.25 / 24 / 60 / 60
-    erb :home
+    erb :info
   end
 
   get '/work' do
