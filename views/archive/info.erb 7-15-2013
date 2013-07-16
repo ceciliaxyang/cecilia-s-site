@@ -3,16 +3,15 @@
 		
 		<div class="row">
 	
-			<div class="span10 offset1 rowtop-pad" align="center" style="padding-top:100px; padding-bottom: 50px;">
-				<p class="lead" style="font-size: 32px; line-height:40px; padding-bottom:30px;">Hello, my name is Cecilia Yang and I'm an interaction & visual designer based in San Francisco. I like to make things that are both useful and beautiful.</p>
-				<p><a title="View my work" href="/work"><button type="button" name="" value="" >&nbsp;&nbsp;View My Work &nbsp;&rarr;</button></a></p>
+			<div class="span10 offset1 rowtop-pad" align="center" style="padding-top:100px; padding-bottom: 80px;">
+				<p class="lead" style="font-size: 32px; line-height:40px;">Hello, my name is Cecilia Yang and I'm an interaction & visual designer based in San Francisco. I like to make things that are both useful and beautiful.</p>
 			</div>
 		</div>
 	
 
 	<div class="dot-separator"></div>
 
-	<div class="row" style="padding-bottom:100px;">
+	<div class="row">
 
 		<div class="span8">
 			<h4>A brief history.</h4>	
@@ -44,6 +43,47 @@
 
 		</div>
 	</div>
+	
+	<div class="dot-separator"></div>
+	
+	
+	<div class="row" style="padding-top:20px; padding-bottom:10px;">
+		<div class="span12">
+			<p class="lead" align="center">The Breakdown:</p>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="span2 rowtop-pad">
+			<h5>For hire:</h5>
+		</div>
+		<div class="span10">
+			<ul class="breakdown">
+						<li class="breakdown"><p class="bar" id="bar1">&nbsp;</p>Interaction Design</li>
+						<li class="breakdown"><p class="bar" id="bar2">&nbsp;</p>Visual Design</li>
+						<li class="breakdown"><p class="bar" id="bar3">&nbsp;</p>Illustration</li>
+						<li class="breakdown"><p class="bar" id="bar4">&nbsp;</p>Writing</li>
+						<li class="breakdown"><p class="bar" id="bar5">&nbsp;</p>Painting</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row" style="padding-bottom:50px;">
+		<div class="span2 rowtop-pad">
+			<h5>Not for hire:</h5>
+		</div>
+		<div class="span10">
+			<ul class="breakdown">
+						<li class="breakdown"><p class="bar" id="bar6">&nbsp;</p>Reading</li>
+						<li class="breakdown"><p class="bar" id="bar8">&nbsp;</p>Photography</li>
+						<li class="breakdown"><p class="bar" id="bar9">&nbsp;</p>Podcasts</li>
+						<li class="breakdown"><p class="bar" id="bar10">&nbsp;</p>Biking/running</li>
+						<li class="breakdown"><p class="bar" id="bar11">&nbsp;</p>Baking</li>
+			</ul>
+		</div>
+	</div>
+
+	
 	
 	
 </div>
