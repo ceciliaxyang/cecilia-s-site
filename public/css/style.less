@@ -348,17 +348,14 @@ button {
 	text-align: center;
   	vertical-align: middle;
 	padding: 10px 40px;
-  	background-color: #3cbac5;
-	background-image: -moz-linear-gradient(
-		top,
-		#7bf8d7 0%,
-		#3cbac5);
-	background-image: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(#7bf8d7),
-		to(#3cbac5));
-	background-repeat: repeat-x;
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7bf8d7', endColorstr='#3cbac5', GradientType=0);
+  background: #87e0e5; /* Old browsers */
+  background: -moz-linear-gradient(top,  #87e0e5 0%, #74d0e0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87e0e5), color-stop(100%,#74d0e0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #87e0e5 0%,#74d0e0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #87e0e5 0%,#74d0e0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #87e0e5 0%,#74d0e0 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #87e0e5 0%,#74d0e0 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0e5', endColorstr='#74d0e0',GradientType=0 ); /* IE6-9 */
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
