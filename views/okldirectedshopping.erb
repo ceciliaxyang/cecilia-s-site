@@ -1,0 +1,470 @@
+<div class="intro-image" id="oklsearchproject"></div>
+
+<div class="intro">
+	<div class="text-block row">
+			<div class="large-6 columns">
+				<h2>Directed Shopping <br>on One Kings Lane</h2>
+				<h6 class="hsmall">2013-2014</h6>
+			</div>
+			<div class="large-6 columns">
+				<p>I worked on bringing directed shopping to our site, which included search, filters, category based-shopping.</p>
+				<p><em>Role: Interaction Designer</em></p>
+				<p><em>Worked with Joana Koiller, Visual Designer</em></p>
+			</div>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+<!-- 	<div class="large-8 columns large-offset-2 large-offset-2">
+ -->		
+ 		<h4>The Problem</h4>
+		<p>One Kings Lane started out in 2009 with a small set of highly curated, individually sourced product assortments ("Events") that changed on a daily basis. The site catered to a serendipitous, discovery-oriented mindset, as it was easy to view all the new products available on the site every day.</p>
+		<p>As the company scaled, it increased the number of events as well as the amount of products in each event. Because of the increase in the number of options, it became overwhemingly difficult for a goal-oriented user to actually find the products she wanted to find. We wanted to support directed shopping so that users could easily search for information for specific products and acquire those products.</p>
+		<p>The goal of the project was to design a suite of tools for the directed user, which included search, filtering, and category navigation. I worked on the interaction design behind all of these experiences.</p>
+<!-- 		<blockquote>Directed Shopping: Shopping with a pretedermined goal, usually to purchase or search for information for specific products. The primary purpose of directed shopping is product acquisition.</blockquote> -->
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-12 columns">
+		<p align="center"><img src="/img/work/okl-directed/spectrum.png"></p>
+	</div>
+</div>
+
+<!-- <div class="image-block">
+	<div class="row">
+		<img src="/img/work/okl-directed/spectrum.png">
+	</div>
+</div>
+ -->
+
+
+<div class="image-block greybg">
+	<div class="row">
+		<h2 class="title"><i>Part 1. Search Filters</i></h2>
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Product Requirements</h4>
+		<p>For search, the main requirements for the MVP were: a Search Results Page (SERP), Filters, with the four facets being Category, Color, Price, and Condition (vintage or non-vintage). From these basic requirements, it was my job to define the user experience requirements.</p>
+		<p>Autocomplete, search tokens, image search, and other filter facets would not make it into the MVP.</p>
+		<p>Metrics that would imply success would involve: engagement, click-through to product, and ultimately conversion.</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Vertical/Horizontal Orientation</h4>
+		<p>The first UX decision I made was around filter orientation on the SERP. While a horizontal layout was preferred from a visual/aesthetic standpoint, I recommended going with a vertical orientation for the following reasons:</p>
+		<p><i>Search is a hunting mindset, where the efficiency of vertical filters is more valuable.</i>
+			<ul>
+				<li>When exposed by default, filters and facets are quickest to manipulate.</li>
+				<li>Most standard and familiar filter layout – users already have a mental model of how it works.</li>
+				<li>Smaller product sizes allow for quicker skimming and comparison.</li>
+				<li>Vertical layout allows for clearest feedback of dynamic changes in filter option availability.</li>
+			</ul>
+		</p>
+		<p><i>Vertical orientation better suited for variable facets and options.</i>
+			<ul>
+				<li>Category filters are highly variable on SERP, constrained on E3 pages, and potentially nonexistent on category pages.</li>
+				<li>Vertical orientation better suited for drilling down for multi-level facets (such as category), which would be a major use case for the SERP.</li>
+				<li>Vertical filters better accommodate dynamic faceting, e.g., showing “size” and “material” if “rug” category is selected. </li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div class="image-block greybg">
+		<img src="/img/work/okl-directed/filter-orientations.png">
+		<p class="caption">Examples of horizontal and vertical orientations.</p>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>General Filter Logic</h4>
+		<p>I laid out high-level logic for how all the filters would work together, such as:
+			<ul>
+				<li>We would only display and enable filters that would reflect available inventory. That is, the user should not be able to click on an option that would return null results.</li>
+				<li>If a facet only returned one filter option, we wouldn't show the facet at all.</li>
+				<li>The first option for every facet would be subtractive (AND); multiple options selected within a facet would be additive (OR).</li>
+				<li>Facets would be collapsible. We could utilize data post-launch to help inform if any facets should be collapsed by default.</li>
+				<li>For the MVP, I recommended non-sticky filters (e.g., the filters would not stick to the top). It was a potentially nice-to-have, as the user could easily access filters no matter how deep in the page they were, but because modifying filters would refresh the page and bring them to the top of the results anyway, I didn't see it as an extra or known benefit.</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Category Facet Logic</h4>
+		<p>There were three main interaction models I determined for the category facet:</p>
+	</div>
+</div>
+
+
+<div class="text-block row nopadding">
+	<div class="large-10 columns large-offset-1">
+		<img src="/img/work/okl-directed/filter-layouts.png">
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<p>Each of these models had their pros and cons. The facet would return the categories that mapped to the queried keyword. The L1, L2, and L3 represent the various levels of the hierarchy. For example, L1 could be "Furniture," L2 could be "Tables," and L3 could be "Side Tables."</p>
+		<h5>Parallel Value Selection</h5>
+		<p><i>Model: only expose deepest levels. Multiple selection is possible. For best legibility, sort alphabetically, with a cutoff at X results (user would have to click to expose more).</i></p>
+		<p><h5 class="hsmall">Pros:</h5>
+			<ul>
+				<li>Very simple interaction for multi-select.</li>
+				<li>Options are specific and concrete.</li>
+			</ul>
+		</p>
+		<p><h5 class="hsmall">Cons:</h5>
+			<ul>
+				<li>Only works well for specific searches.</li>
+				<li>Amount of L3x may be overwhelming.</li>
+				<li>Hierarchy is invisible to user</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div class="text-block row nopadding">
+	<div class="large-12 columns">
+		<img src="/img/work/okl-directed/parent-sibling.png">
+		<p class="caption">Illustrating all possible parent-sibling relationship scenarios possible (8 total). I used this to demonstrate the interaction for each model in every use case.</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">		
+		<h5>Hierarchical Drilldown</h5>
+		<p><i>Model: single selection of categories. Only show the highest differing parent, and only show levels if multiple options are available (i.e., user should never be able to click on a parent if it only has one child).</i></p>
+		<p>Because this interaction reflected hierarchy, I mapped out all possible use cases (multiple options or single option for L1, multiple or single option for L2, and so on) to illustrate what the interaction meant.</p>
+		<p><h5 class="hsmall">Pros:</h5>
+			<ul>
+				<li>Parent-sibling relationship is explicit.</li>
+				<li>Interaction is contained within a single facet and conserves real estate.</li>
+			</ul>
+		</p>
+		<p><h5 class="hsmall">Cons:</h5>
+			<ul>
+				<li>Hierarchy may not be important to user.</li>
+				<li>Multiple selection of categories is not possible in this model.</li>
+			</ul>
+		</p>
+		<h5>Segmented Drilldown</h5>
+		<p><i>Model: separate facets for department, category, and product. We always start the interaction with the highest differing parent, and only show facets when there are multiple options available.</i></p>
+		<p><h5 class="hsmall">Pros:</h5>
+			<ul>
+				<li>Very simple interaction</li>
+				<li>Accomodates for multiple selection of L3s.</li>
+			</ul>
+		</p>
+		<p><h5 class="hsmall">Cons:</h5>
+			<ul>
+				<li>Parent-sibling relationship less explicit.</li>
+				<li>Separate facets hogs real estate.</li>
+				<li>New available facets will need to be discovered.</li>
+				<li>Vague terminology for Department vs. Category vs. Product.</li>
+			</ul>
+		</p>
+		<p>Ultimately, we went with the Hierarchical Drilldown model, since it better suited our product taxonomy and didn't require renaming of any nodes.</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Color Facet Logic</h4>
+		<p>The logic I proposed:
+			<ul>
+				<li>Only display swatches that will return results.</li>
+				<li>All products must be represented by swatches.</li>
+				<li>No color drilldown. For example, if I choose red from a "blunt palette," we won't offer the user a more nuanced palette with several options of red.</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-12 columns">
+		<img src="/img/work/okl-directed/color-swatch-exploration.png">
+		<p class="caption">Explorations of color swatch UI/UX.</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h5>A new interaction model</h5>
+		<p>I proposed an interaction where you would have three color palettes, and we would dynamically show the set based on the color set of the results returned. I won't go into too much information, but there was a whittling down process of color swatches.</p>
+<!-- 		<p><img src="/img/work/okl-directed/color-palettes.png"></p> -->
+		<p>We were able to prototype these, and they worked, but we didn't not include in the MVP.</p>
+	</div>
+</div>
+
+<div class="image-block">
+		<img src="/img/work/okl-directed/color-palettes2.png">
+		<p class="caption">I did some experimentations based on our color data to determine the most blunt palette that would represent the majority of our product colors.</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Price Facet Logic</h4>
+		<p>There were two main interaction models I proposed. One was a price slider, and the other was multiselection of dynamic price bands.</p>
+		<p><img src="/img/work/okl-directed/price-options.png"></p>
+		<h5>Slider</h5>
+		<p>For the slider, the min and max would dynamically adjust to match the min and max of the results set. The greatest benefit would be that the user could be very specific about their price range. The downsides were that: specificity is only good if our users are price sensitive; it would require a lot of manipulation (clicking and dragging), and worst of all, the results would not reflect our inventory levels. That is, a user could do a lot of clicking and dragging only to find null results in their desired price range.</p>
+		<p><i>Idea: Price Slider Sparkline</i></p>
+		<p>To combat the last problem outlined above, I designed a couple concepts so that a design could reflect inventory levels behind price ranges. These essentially involved sparklines –  simplified histogram of bin size at every price increment.</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-12 columns">
+		<img src="img/work/okl-directed/sparkline.png">
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h5>Price Bands</h5>
+		<p>The other option, and the option that we ultimately decided to go with, were simple price bands. The idea was that we could generate a limited set of price increments for lower/medium/higher results sets, and based on the results, pick the one that was a best match based on min/max values and distribution of those values.</p>
+		<p><img src="img/work/okl-directed/price-table.png"></p>
+		<p>These price bands would be presented simply in a standard multi-select checkbox UI for the MVP. Some other logic rules included: Don't show price bands returning null results, and if results only return a single band, don't show the price facet entirely.</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Dynamic Changes Based on Availability</h4>
+		<p>Another important piece of UX logic I recommended was how we presented dynamic changes in product availability to the user. Instead of just removing filter options that would produce null results, I proposed that:</p>
+
+			<ul>
+				<li>Unavailable options become disabled util the user undoes the restrictive filters.</li>
+				<li>Fetch a new color palette if a new one matches the results set.</li>
+				<li>If pool size is displayed, zero out the filter values.</li>
+			</ul>
+		<p>The reason behind this interaction was because hiding options would be an erratic experience, especially if entire facets disappeared.</p>
+	</div>
+</div>
+
+
+<div class="image-block greybg">
+	<div class="row">
+		<h2 class="title"><i>Part 2. Null Results</i></h2>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>The Problem</h4>
+		<p>While it was important to design for the "happy flow," that is, when results are actually being presented to the user, a huge component of search is how we present null results. The problem I had to solve was: what is the best experience for a user if we can't show them an exact match for their query?</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>First, Avoid Null Results</h4>
+		<p>As a first part of my exercise, I thought about null results prevention – how do you reduce the chances of a user getting a null result in the first place?</p>
+		<p>The answer lies in a more robust search: for example, spellcheck, and synonym support. For example, a user might search for "couch" on our site, which should also be mapped to "sofa."</p>
+		<p>Manual mapping is also important. If a user searches for non-product related search terms - for example, "customer care," "clearance," and "my account," each of those queries should be returning the actual page.</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Solutions for Null Results</h4>
+		<p>I came up with a system of logic for null results, in the case of multi-word queries. The solutions are ordered in most relevant helpful to least. The idea is that if we try to provide the first solution, and if it's not available, cascade to the second, and so on.</p>
+		<h5>In case of no exact match, show:</h5>
+		<p>
+			<ol>
+				<li>Smart Tokenization</li>
+				<li>Parent Category Products</li>
+				<li>Simple Tokenization</li>
+				<li>True Null Page</li>
+			</ol>
+		</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-12 columns">
+		<img src="/img/work/okl-directed/null-layouts.png">
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>1. "Smart Tokenization"</h4>
+		<p>I defined "smart tokenization" as tokenizing the query string when we can detect that each of the words is meaningful - that is, when we can detect a category as a keyword. (In other cases, a query may not make sense when broken up into its individual components).</p>
+		<p><i>Examples of queries eligible for Smart Tokenization:</i></p>
+			<ul>
+				<li>bathroom vanity</li>
+				<li>baby mobile</li>
+				<li>bombay chest</li>
+				<li>car trunk organizer</li>
+				<li>black crystal chandelier</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div class="greybg">
+	<div class="text-block row">
+		<div class="large-10 columns large-offset-1">
+			<img src="/img/work/okl-directed/null-token.png">
+			<p class="caption">An example of Smart Tokenization.</p>
+		</div>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>2. Parent Category Products</h4>
+		<p>If tokenization cannot be meaningful, the next step is for the system to check if we can detect the parent category of a product, using hierarchy from past products if needed.</p>
+		<p><i>Examples of queries eligible for Smart Tokenization:</i></p>
+			<ul>
+				<li>family rules</li>
+				<li>barbara barry</li>
+				<li>shabby chic</li>
+			</ul>
+		</p>
+	</div>
+</div>
+
+<div class="greybg">
+	<div class="text-block row">
+		<div class="large-10 columns large-offset-1">
+			<img src="/img/work/okl-directed/null-parent-category.png">
+			<p class="caption">An example of utilizing a parent category.</p>
+		</div>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>3. Simple Tokenization</h4>
+		<p>If we can't detect a parent category, which shouldn't happen unless data is missing, then we can simply tokenize. In this case, there's a chance the null results won't be very helpful.</p>
+	</div>
+</div>
+
+<div class="greybg">
+	<div class="text-block row">
+		<div class="large-10 columns large-offset-1">
+			<img src="/img/work/okl-directed/null-simple-token.png">
+			<p class="caption">An example of Simple Tokenization.</p>
+		</div>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>4. True Null Results</h4>
+		<p>In case all else fails, and we can't show anything at all relevant, we can show a true results page. The best thing we can do at this point is show a big search box with the query preserved for easy modification and re-searching.</p>
+		<p>Ideally, we could resurface relevant product below, like Recently Viewed, but if we couldn't, the best we could show would be the most popular products, as determined by us or our uers.</p>
+	</div>
+</div>
+
+<div class="greybg">
+	<div class="text-block row">
+		<div class="large-10 columns large-offset-1">
+			<img src="/img/work/okl-directed/null-results.png">
+			<p class="caption">An example of a True Null Results page.</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Other Logic</h4>
+		<p>Other variables to take into account was what happens if results are "thin," that is, we have matches, but they fall below a specific threshold, and when we feel confident enough that our results may be so irrelevant as to warrant a larger search box for re-query.</p>
+		<p align="center"><img src="/img/work/okl-directed/null-results-logic.jpg"></p>
+		<p class="caption">A logic chart showing desired behavior with query match and no-matches.</p>
+	</div>
+
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Ideas: Making Null Results Useful</h4>
+		<p>I thought about other ways that we could lessen the blow of a null results page and make it actually useful to the userful. One idea was upcoming sale reminders. If I searched for "French Country Furniture," and if One Kings Lane wasn't selling that today, but selling it in a thematic sale couple days, we could surface the upcoming sale, and the user could elect to be notified when the sale started.</p>
+		<p>In the same vein, we could provide the same notification functionality with regards to product. I could search for a specific category or product, e.g., "Arc Floor Lamp," and if it weren't available on the site today, but was in the past, we could provide a functionality to remind the user when the product is rerun.</p>
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-10 columns large-offset-1">
+		<img src="/img/work/okl-directed/null-event-notify.png">
+	</div>
+</div>
+
+<!-- <div class="image-block greybg">
+	<div class="row">
+		<h2 class="title"><i>Part 3. Category Filters</i></h2>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>The Problem</h4>
+		<p>In the same vein of directed shopping, One Kings Lane also wanted to provide an experience for users with more directed intent, but not as directed as search. The solution was category-based shopping.</p>
+		<p>I worked on the UX for category-based shopping on the site, including the information architecture and navigation model. This was an entire project in itself, so I'll only cover the filters aspect of it.</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-12 columns">
+		<img src="/img/work/okl-directed/spectrum-categories.png">
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Filters</h4>
+		<p>The other big UX problem to solve was how we represent filters </p>
+		<p>Show different layouts</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Filter Animation</h4>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Filter Tooltip</h4>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Finished Filter Product</h4>
+	</div>
+</div> -->
