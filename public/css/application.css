@@ -34,15 +34,25 @@
 /*  border-top: 1px solid #efefef;*/
 }
 
+
+.story-block {
+  padding: 250px 0px 200px 0px;
+  border-top: 1px solid #efefef;
+  min-height: 500px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: ;
+}
+
 .nopadding {
   padding:0px;
 }
-
+/*
 .intro {
     border-bottom: 1px solid #efefef;
     padding: 30px 0px;
 }
-
+*/
 .divider {
   display: block;
   width: 7%;
@@ -72,6 +82,7 @@
 }
 
 
+
 /*Project Pages*/
 .image-block {
   padding: 60px 0px;
@@ -92,6 +103,56 @@
 
 .greybg {
   background-color: #fafafa;
+}
+
+.orangebg {
+  background-color: #EF8763;
+}
+
+
+.pinkbg{
+  background-color: #EBA6A5;
+  color: #fff;
+}
+
+.peachbg{
+  background-color: #FADDCD;
+  color: #fff;
+}
+
+.yellowbg {
+  background-color: #FACE5D;
+}
+
+.lightyellowbg {
+  background-color: #FFFCC9;
+}
+
+.greenbg {
+  background-color: #5BB887;
+}
+
+.tealbg {
+  background-color: #AADACF;
+  color: #fff;
+}
+
+.mintbg {
+  background-color: #C9E4C7;
+  color: #fff;
+}
+
+.bluebg {
+  background-color: #ABD3E3;
+  color: #fff;
+}
+
+.brightbluebg {
+  background-color: #C7EAFD;
+}
+
+.violetgreybg {
+  background-color: #DFE2E7;
 }
 
 /*Hero Images on my Project Pages*/
@@ -171,6 +232,41 @@
 }
 
 
+/*About Me Pictures*/
+
+#drawingatthree {
+  background-image: url(/img/about/3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+#canvas {
+  background-image: url(/img/about/ballet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+#prl {
+  background-image: url(/img/about/prl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+
+
+#illustrations {
+  background-image: url(/img/about/illustrations.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+/*  height: 600px;
+*/}
+
 
 /*Top Navigation*/
 
@@ -214,7 +310,20 @@
 
 
 
-/*Buttons & Inputs*/
+/*Buttons, Links & Inputs*/
+
+a {
+/*  color: #008cba;*/
+  text-decoration: underline;
+  color: inherit;
+  line-height: inherit; }
+  a:hover, a:focus {
+    color: #0078a0; }
+
+/*.top-bar-section a li {
+  text-decoration: none:
+}*/
+
 
 button, .button {
   border: 3px solid #000000;
@@ -266,6 +375,20 @@ h6 {font-size: 0.85rem;}
 
 .hsmall {color: #B1B1B1;}
 
+.white {
+  color: #fff;
+}
+
+.underline {
+  border-bottom: 4px solid #000;
+  padding-bottom: .15em;
+}
+
+.underlinewhite {
+  border-bottom: 4px solid #fff;
+  padding-bottom: .15em;
+}
+
 
 p {
   font-size: 1.3rem;
@@ -275,6 +398,18 @@ p {
 p.lead {
   font-size: 1.7875rem;
   line-height: 1.2;
+}
+
+p.biglead {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+p.biggerlead {
+  font-size: 2.7rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
 }
 
 p.caption {
@@ -288,6 +423,21 @@ p.caption {
   margin-right: auto;
   max-width: 600px;
 }
+
+p.caption2 {
+  font-size: 1.4rem;
+  text-align: center;
+/*  color: #fff;*/
+/*  padding-top: 480px;
+*//*  font-family: 'AGaramondPro-Italic';
+  width: 57%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;*/
+  position: relative;
+  top: 475px;
+}
+
 
 ul, ol {
   font-size: 1.3rem;

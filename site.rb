@@ -22,6 +22,13 @@ class Site < Sinatra::Base
     erb :about
   end
 
+    get '/photos' do
+    @show_navbar = true
+    @show_footer = true
+    erb :photos
+  end
+
+
   get '/okl-redesign' do
     @show_navbar = true
     @show_footer = true
