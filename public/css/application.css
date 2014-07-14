@@ -155,29 +155,6 @@
   background-color: #DFE2E7;
 }
 
-/*Hero Images on my Project Pages*/
-
-
-#oklipadproject {
-    background-image: url(/img/background/okl-ipad-project.png);
-}
-
-#oklsearchproject {
-    background-image: url(/img/background/okl-directed-shopping.png);
-
-}
-
-#jawbonemobileproject {
-    background-image: url(/img/background/jawbone-mobile.jpg);
-}
-
-
-#jamboxbuttonsproject {
-    background-image: url(/img/background/jambox-buttons-project.jpg);
-}
-
-
-
 
 .block {
 	padding-top: 140px;
@@ -212,9 +189,11 @@
 
 
 #jawbonemobile {
-  background-image: url(/img/background/jawbone-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: right; 
+/*  background-image: url(/img/background/jawbone-mobile.jpg);
+*/  background-repeat: no-repeat;
+  background-position: top right; 
+  background-image: url(/img/background/jawbone-mobile-isometric-transparent.png);
+  background-size: cover;
 }
 
 #jawboneipad {
@@ -230,6 +209,31 @@
   background-position: right; 
   background-size: cover;
 }
+
+
+/*Hero Images on Project Pages*/
+
+
+#oklipadproject {
+    background-image: url(/img/background/okl-ipad-project.png);
+}
+
+#oklsearchproject {
+    background-image: url(/img/background/okl-directed-shopping.png);
+
+}
+
+#jawbonemobileproject {
+    background-image: url(/img/background/jawbone-mobile-isometric.png);
+    background-position: top; 
+}
+
+
+#jamboxbuttonsproject {
+    background-image: url(/img/background/jambox-buttons-project.jpg);
+}
+
+
 
 
 /*About Me Pictures*/
@@ -407,7 +411,7 @@ p.biglead {
 }
 
 p.biggerlead {
-  font-size: 2.rem;
+  font-size: 2.4rem;
   line-height: 1.2;
   letter-spacing: -0.5px;
 }
