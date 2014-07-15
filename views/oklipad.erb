@@ -72,10 +72,31 @@
 	</div>
 </div>
 
-<div class="text-block row">
+<div class="text-block row" style="padding-top:0px; padding-bottom:90px;">
 	<div class="large-10 columns large-offset-1">
 		<img src="/img/work/okl-ipad/research.png">
 		<p class="caption">A sample snapshot of competitive research.</p>
+	</div>
+</div>
+
+
+<div class="story-block pinkbg">
+	<div class="row">
+		<h5 class="white"><span class="underlinewhite">PART 1</span></h5><br><br>
+		<p class="biggerlead">Product Page</p>
+	</div>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>UX Recommendations</h4>
+		<p>Based on the audit and competitive + usability research, I compiled a "Top UX Recommendations" list that I would integrate into my sketches and prototypes. This list I shared with Product so that they would understand the thought and research behind some of the recommendations and decisions that I would eventually make from the design side.</p>
+		<h5>Recommendations</h5>
+		<ul>
+			<li>Context gives the user confidence to buy. Bigger product images, more product images, and more product information helps users make more informed decisions.</li>
+			<li>For products with multiple sizes, like rugs, expose all size options so users have the ability to easily compare and select sizes (versus cramming all into a dropdown).</li>
+			<li>Progressive disclosure with product information: on first paint, show critical information, such as name, price, estimated arrival, and delivery date. (Ideally show critical information on a category basis.) Only show other information when user invokes it.</li>
+		</ul>
 	</div>
 </div>
 
@@ -83,8 +104,61 @@
 
 <div class="text-block row">
 	<div class="large-8 columns large-offset-2">
+		<h4>Sketches</h4>
+		<p>Based on research, started to draw out options. During this stage, the most important explorations were on basic page hierarchy and layout, and at a high level, how the information could be clustered.</p>
+		<p>SCANNED SKETCHES HERE</p>
+	</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Iteration</h4>
+		<p>After sketching, I moved to low-fidelity wireframing. At this point, I wanted to refine the initial layout explorations, and also pressure test it for a variety of different situations and permutations</p>
+			<ul>
+				<li>Landscape and portrait orientation</li>
+				<li>Product availability: Was it on hold, sold out, or available to buy?</li>
+				<li>Inventory: Were there only a few products left?</li>
+				<li>Size options and availability</li>
+				<li>Shipping: Any special delivery fees?</li>
+				<li>Vintage or non-vintage</li>
+				<li>Varying amounts of information (product attributes, description, etc.)</li>
+			</ul>
+		<p>On a daily/weekly cadence, I would get feedback from both design, and product, who also communicated any engineering/technical constraints. This feedback was fed into multiple iterations of design.</p>
+	</div>
+</div>
+
+<div class="image-block greybg">
+		<img src="img/work/okl-ipad/pdp-iteration.png">
+		<p class="caption">Different wireframe explorations for the Product Page.</p>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
+		<h4>Interaction Notes and Visual Design</h4>
+		<p>When Product and Design settled on the final interaction, I delivered the final wireframes with interaction notes. Jonathan Lieberman, Director of Design at One Kings Lane, took my wireframes and applied visual designs. </p> 
+	</div>
+</div>
+
+<div class="image-block" style="background-color:#f5f5f5">
+	<p class="caption">Final version. Visuals by Jonathan Lieberman.</p>
+</div>
+
+
+
+<div class="story-block orangebg">
+	<div class="row">
+		<h5 class="white"><span class="underlinewhite">PART 2</span></h5><br><br>
+		<p class="biggerlead">Cart & Checkout</p>
+	</div>
+</div>
+
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
 		<h4>Usability Research</h4>
-		<p>Before designing, I also integrated competitive research on existing native checkout experiences, as well as information published from trusted usability firms and other experts in the space. Here were a few snippets of research that I found particularly interesting:</p>
+		<p>Before designing, I researched information published from trusted usability firms and other experts in the space. Here were a few snippets of research that I found particularly interesting:</p>
 		<h5>One-page checkouts not necessarily superior</h5>
 		<blockquote>
 		"...we found that users in general had relatively few problems navigating between multiple steps (as long as a few simple guidelines are adhered to) – the usability issues were primarily caused by what the customer had to do at each step."
@@ -115,9 +189,8 @@
 <div class="text-block row">
 	<div class="large-8 columns large-offset-2">
 		<h4>UX Recommendations</h4>
-		<p>Based on the audit and competitive + usability research, I compiled a "Top UX Recommendations" list that I would integrate into my sketches and prototypes. This list I shared with Product so that they would understand the thought and research behind some of the recommendations and decisions that I would eventually make from the design side.</p>
-		<p>For checkout, I also used it to point out that the bulk of the usability issues stemmed from the existing desktop experience, and that those problems would have to be solved at the source if we were to maintain a webview for native.</p>
-		<h5>UX RECOMMENDATIONS (CHECKOUT):</h5>
+		<p>For checkout, I also used these to point out that the bulk of the usability issues stemmed from the existing desktop experience, and that those problems would have to be solved at the source if we were to maintain a webview for native.</p>
+		<h5>Recommendations:</h5>
 		<ul class="disc">
 			<li>Relaxed address validation rules and re-layout the page. Instead of communicating that the user has made an error, provide the new address as a gentle suggestion.</li>
 			<li>Use smart defaults.</li>
@@ -137,12 +210,6 @@
 			<li>Visual change: Shorter forms (for less scrolling) while increasing padding for optimal white space.</li>
 			<li>Preserve standard formatting when inputting phone number, credit card number, and credit card expiration date.</li>
 		</ul>
-		<h5>UX Recommendations (Product Page)</h5>
-		<ul>
-			<li>Context gives the user confidence to buy. Bigger product images, more product images, and more product information helps users make more informed decisions.</li>
-			<li>For products with multiple sizes, like rugs, expose all size options so users have the ability to easily compare and select sizes (versus cramming all into a dropdown).</li>
-			<li>Progressive disclosure with product information: on first paint, show critical information, such as name, price, estimated arrival, and delivery date. (Ideally show critical information on a category basis.) Only show other information when user invokes it.</li>
-		</ul>
 	</div>
 </div>
 
@@ -153,9 +220,19 @@
 		<h4>Logic Flows</h4>
 		<p>For checkout, I then started to map out the possible logic flows for our new experience.  My two recommendations were (1) a simple one-page checkout and (2) a simple serialized flow.</p>
 		<p>I also worked on a system for classifying errors. I bucketed the errors into three main types, and designed the interaction for each.</p>
+	</div>
+</div>
+
+<div class="image-block greybg">
+		<img src="/img/work/okl-ipad/logic-flow.png">
+		<p class="caption">Sample logic flow from add to cart to end of checkout.</p>
+</div>
+
+<div class="text-block row">
+	<div class="large-8 columns large-offset-2">
 		<h5>Error Classification</h5><br>
 		<p><i>1. Severe Errors</i><br>Errors that prevent us from completing transaction and shipping to the customer. The desired error handling behavior is to detect error on key press and interrupt user with error dialog.</p>
-		<p>Examples:
+		<h5 class="hsmall">Examples:</h5><p>
 			<ul>
 				<li>Enters a PO box, APO/FPO for shipping</li>
 				<li>Enters a non-accepted payment method</li>
@@ -163,7 +240,7 @@
 			</ul>
 		</p>
 		<p><i>2. Obvious Errors</i><br>The desired error handling behavior is to detect error on blur and mark field red.</p>
-		<p>Examples:
+		<h5 class="hsmall">Examples:</h5><p>
 			<ul>
 				<li>Zip code must be 5 or 9 digits</li>
 				<li>Phone number must be 10 digits</li>
@@ -173,7 +250,7 @@
 			</ul>
 		</p>
 		<p><i>3. Non-obvious Errors</i><br>The desired error handling behavior is to detect error when user submits form, show error dialog, and mark erroneous fields red.</p>
-		<p>Examples:
+		<h5 class="hsmall">Examples:</h5><p>
 			<ul>
 				<li>Gift card or discount codes invalid</li>
 				<li>Fields left empty</li>
@@ -183,17 +260,16 @@
 	</div>
 </div>
 
-<div class="image-block greybg">
+<!-- <div class="image-block greybg">
 		<img src="/img/work/okl-ipad/logic-flow.png">
 		<p class="caption">Sample logic flow from add to cart to end of checkout.</p>
 </div>
-
+ -->
 
 <div class="text-block row">
 	<div class="large-8 columns large-offset-2">
 		<h4>Sketches + Iteration</h4>
-		<p>For checkout, because of a product decision to not veer away from the existing experience too much, we decided to pursue the serialized flow option. I began to sketch out different possibilities.</p>
-		<p>On a daily/weekly cadence, I would get feedback from both design, and product, who also communicated any engineering/technical constraints. This feedback was fed into multiple iterations of design.</p>
+		<p>We decided to pursue the serialized flow option for checkout, and I began to sketch out different possibilities.</p>
 	</div>
 </div>
 
@@ -205,14 +281,13 @@
 <div class="text-block row">
 	<div class="large-8 columns large-offset-2">
 		<h4>Interaction Notes</h4>
-		<p>When Product and Design settled on the final interaction, I delivered the final wireframes with interaction notes. Jonathan Lieberman, Director of Design at One Kings Lane, took my wireframes and applied visual designs. </p> 
+		<p>I then delivered the final wireframes with interaction notes. My designs were given a visual treatment to be consistent with the rest of the app.</p> 
 	</div>
 </div>
 
-<div class="image-block greybg">
-		FINAL PRETTY VISUALS + ANIMATION
+<div class="image-block" style="background-color:#f5f5f5">
+	<p class="caption">Final version. Visuals by Jonathan Lieberman.</p>
 </div>
-
 
 
 

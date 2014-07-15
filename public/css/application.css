@@ -27,6 +27,8 @@
   height: 500px;
   background-position: center; 
   border-bottom: 1px solid #efefef;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .text-block {
@@ -47,18 +49,26 @@
 .nopadding {
   padding:0px;
 }
-/*
+
 .intro {
     border-bottom: 1px solid #efefef;
-    padding: 30px 0px;
 }
-*/
+
+.intro p {
+  font-size: 120%;
+  color: #666;
+}
+
 .divider {
   display: block;
   width: 7%;
   margin: 20px auto 20px auto;
   border: 0;
   border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+.whitedivider {
+  border-top: 1px solid #fff;
 }
 
 /*If I don't want any border around my text block*/
@@ -107,6 +117,7 @@
 
 .orangebg {
   background-color: #EF8763;
+  color: #fff;
 }
 
 
@@ -409,6 +420,7 @@ p {
 p.lead {
   font-size: 1.7875rem;
   line-height: 1.2;
+  color: inherit;
 }
 
 p.biglead {
@@ -480,7 +492,7 @@ blockquote {
   padding-left: 20px;
   margin-left: -23px;
   padding-bottom: 3px;
-  color: #9c9c9c;
+  color: #646464;
 }
 
 /*Footer*/
