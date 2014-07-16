@@ -6,7 +6,8 @@ class Site < Sinatra::Base
   get '/' do
     @seconds_old = Time.now - Time.local(1987, 3, 12)
     @age = @seconds_old / 365.25 / 24 / 60 / 60
-    erb :home
+    @show_footer = true
+    erb :about
   end
 
   get '/design' do
