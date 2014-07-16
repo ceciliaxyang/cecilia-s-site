@@ -28,7 +28,13 @@
   background-position: center; 
   border-bottom: 1px solid #efefef;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
+}
+
+.intro-image h5 {
+  color: #fff;
+  padding-bottom: 0px; 
+  margin-bottom:-12px;
 }
 
 .text-block {
@@ -38,7 +44,7 @@
 
 
 .story-block {
-  padding: 250px 0px 200px 0px;
+  padding: 230px 0px 200px 0px;
   border-top: 1px solid #efefef;
   min-height: 500px;
   vertical-align: middle;
@@ -57,6 +63,10 @@
 .intro p {
   font-size: 120%;
   color: #666;
+}
+
+.intro p.lead {
+  padding-bottom: 15px;
 }
 
 .divider {
@@ -242,6 +252,7 @@
 
 #jamboxbuttonsproject {
     background-image: url(/img/background/jambox-buttons-project.jpg);
+    background-position: top;
 }
 
 
@@ -253,7 +264,7 @@
   background-image: url(/img/about/3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #canvas {
@@ -261,7 +272,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 800px;
 }
 
 #prl {
@@ -277,6 +288,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 600px;
 /*  height: 600px;
 */}
 
@@ -286,8 +298,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-/*  height: 600px;
-*/}
+  height: 600px;
+}
 
 
 /*Top Navigation*/
@@ -430,9 +442,9 @@ p.biglead {
 }
 
 p.biggerlead {
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   line-height: 1.2;
-  letter-spacing: -0.5px;
+  letter-spacing: -1.2px;
 }
 
 p.caption {
@@ -458,7 +470,7 @@ p.caption2 {
   margin-right: auto;
   max-width: 600px;*/
   position: relative;
-  top: 475px;
+  top: 95%;
 }
 
 
