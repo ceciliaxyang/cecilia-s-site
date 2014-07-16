@@ -203,9 +203,10 @@
 
 #oklfind{
   background-image: url(/img/background/okl-find.png);
-  background-repeat: repeat-x repeat-y;
+  background-repeat: no-repeat;
   background-position: center; 
   background-color: #fbfbfb;
+  background-size: cover;
 }
 
 
@@ -241,6 +242,7 @@
 
 #oklsearchproject {
     background-image: url(/img/background/okl-directed-shopping.png);
+    background-position: center;
 
 }
 
