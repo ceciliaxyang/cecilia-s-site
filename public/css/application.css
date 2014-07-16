@@ -21,6 +21,10 @@
 /*  background-color: #F5CCC7;
 */}
 
+/*.intro-animate {
+animation-delay:1s; -moz-animation-delay:1s; -webkit-animation-delay:1s;
+}
+*/
 /*Project Pages*/
 .intro-image {
   background-size: cover;
