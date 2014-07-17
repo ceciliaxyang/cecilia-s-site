@@ -1,39 +1,83 @@
 /*Introduction on Homepage*/
 .intro-block-home p {
-/*  position: relative;
-  top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);*/
   height: 700px;
   line-height: 700px; /*<-- this is what you must define*/
   vertical-align: middle;
   font-size: 200%;
 }
 
-/*Introduction on Design Page*/
-.intro-block {
-  height: 600px;
-  padding: 100px 0px;
-  font-family: 'AdventorBold';
-  font-size: 5rem;
-  text-align: center;
-/*  background-color: #F5CCC7;
-*/}
-
-
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeInDown {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-/*    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);*/
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}*/
+
+/*@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 
   100% {
@@ -46,9 +90,9 @@
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-/*    -webkit-transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);*/
+    transform: translate3d(0, -100%, 0);
   }
 
   100% {
@@ -63,6 +107,17 @@
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+*/
+
+/*Introduction on Design Page*/
+.intro-block {
+  height: 600px;
+  padding: 100px 0px;
+  font-family: 'AdventorBold';
+  font-size: 5rem;
+  text-align: center;
+/*  background-color: #F5CCC7;
+*/}
 
 /*Project Pages*/
 .intro-image {
