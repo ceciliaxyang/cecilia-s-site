@@ -1,9 +1,9 @@
 <div class="intro-image" id="oklsearchproject">
 	<div class="text-block row">
 		<div class="large-8 columns large-offset-2">
-			<h5 style="color:#000" class="fadeIn animated">One Kings Lane</h5>
-			<div class="divider fadeIn animated"></div>
-			<img class="fadeIn animated delay1" src="img/work/header-directed-shopping.png">
+			<h5 style="color:#000" class="fadeIn animated2">One Kings Lane</h5>
+			<div class="divider fadeIn animated2"></div>
+			<img class="fadeIn animated" src="img/work/header-directed-shopping.png">
 
 		</div>
 	</div>
@@ -91,17 +91,17 @@
 		<p>The first UX decision I made was around filter orientation on the SERP. While a horizontal layout was preferred from a visual/aesthetic standpoint, I recommended going with a vertical orientation for the following reasons:</p>
 		<p><i>Search is a hunting mindset, where the efficiency of vertical filters is more valuable.</i>
 			<ul>
-				<li>When exposed by default, filters and facets are quickest to manipulate.</li>
-				<li>Most standard and familiar filter layout – users already have a mental model of how it works.</li>
-				<li>Smaller product sizes allow for quicker skimming and comparison.</li>
-				<li>Vertical layout allows for clearest feedback of dynamic changes in filter option availability.</li>
+				<li><span>When exposed by default, filters and facets are quickest to manipulate.</span></li>
+				<li><span>Most standard and familiar filter layout – users already have a mental model of how it works.</span></li>
+				<li><span>Smaller product sizes allow for quicker skimming and comparison.</span></li>
+				<li><span>Vertical layout allows for clearest feedback of dynamic changes in filter option availability.</span></li>
 			</ul>
 		</p>
 		<p><i>Vertical orientation better suited for variable facets and options.</i>
 			<ul>
-				<li>Category filters are highly variable on SERP, constrained on Events pages, and potentially nonexistent on category pages.</li>
-				<li>Vertical orientation better suited for drilling down for multi-level facets (such as category), which would be a major use case for the SERP.</li>
-				<li>Vertical filters better accommodate dynamic faceting, e.g., showing “size” and “material” if “rug” category is selected. </li>
+				<li><span>Category filters are highly variable on SERP, constrained on Events pages, and potentially nonexistent on category pages.</span></li>
+				<li><span>Vertical orientation better suited for drilling down for multi-level facets (such as category), which would be a major use case for the SERP.</span></li>
+				<li><span>Vertical filters better accommodate dynamic faceting, e.g., showing “size” and “material” if “rug” category is selected. </span></li>
 			</ul>
 		</p>
 	</div>
@@ -118,11 +118,11 @@
 		<h4>General Filter Logic</h4>
 		<p>I laid out high-level logic for how all the filters would work together, such as:
 			<ul>
-				<li>We would only display and enable filters that would reflect available inventory. That is, the user should not be able to click on an option that would return null results.</li>
-				<li>If a facet only returned one filter option, we wouldn't show the facet at all.</li>
-				<li>The first option for every facet would be subtractive (AND); multiple options selected within a facet would be additive (OR).</li>
-				<li>Facets would be collapsible. We could utilize data post-launch to help inform if any facets should be collapsed by default.</li>
-				<li>For the MVP, I recommended non-sticky filters (e.g., the filters would not stick to the top). It was a potentially nice-to-have, as the user could easily access filters no matter how deep in the page they were, but because modifying filters would refresh the page and bring them to the top of the results anyway, I didn't see it as an extra or known benefit.</dynali>
+				<li><span>We would only display and enable filters that would reflect available inventory. That is, the user should not be able to click on an option that would return null results.</span></li>
+				<li><span>If a facet only returned one filter option, we wouldn't show the facet at all.</span></li>
+				<li><span>The first option for every facet would be subtractive (AND); multiple options selected within a facet would be additive (OR).</span></li>
+				<li><span>Facets would be collapsible. We could utilize data post-launch to help inform if any facets should be collapsed by default.</span></li>
+				<li><span>For the MVP, I recommended non-sticky filters (e.g., the filters would not stick to the top). It was a potentially nice-to-have, as the user could easily access filters no matter how deep in the page they were, but because modifying filters would refresh the page and bring them to the top of the results anyway, I didn't see it as an extra or known benefit.</dynali>
 			</ul>
 		</p>
 		<img src="img/work/okl-directed/sketches.jpg">
@@ -154,15 +154,15 @@
 		<p><i>Model: only expose deepest levels. Multiple selection is possible. For best legibility, sort alphabetically, with a cutoff at X results (user would have to click to expose more).</i></p>
 		<p><h5 class="hsmall">Pros:</h5>
 			<ul>
-				<li>Very simple interaction for multi-select.</li>
-				<li>Options are specific and concrete.</li>
+				<li><span>Very simple interaction for multi-select.</span></li>
+				<li><span>Options are specific and concrete.</span></li>
 			</ul>
 		</p>
 		<p><h5 class="hsmall">Cons:</h5>
 			<ul>
-				<li>Only works well for specific searches.</li>
-				<li>Amount of L3x may be overwhelming.</li>
-				<li>Hierarchy is invisible to user</li>
+				<li><span>Only works well for specific searches.</span></li>
+				<li><span>Amount of L3x may be overwhelming.</span></li>
+				<li><span>Hierarchy is invisible to user</span></li>
 			</ul>
 		</p>
 	</div>
@@ -182,30 +182,30 @@
 		<p>Because this interaction reflected hierarchy, I mapped out all possible use cases (multiple options or single option for L1, multiple or single option for L2, and so on) to illustrate what the interaction meant.</p>
 		<p><h5 class="hsmall">Pros:</h5>
 			<ul>
-				<li>Parent-sibling relationship is explicit.</li>
-				<li>Interaction is contained within a single facet and conserves real estate.</li>
+				<li><span>Parent-sibling relationship is explicit.</span></li>
+				<li><span>Interaction is contained within a single facet and conserves real estate.</span></li>
 			</ul>
 		</p>
 		<p><h5 class="hsmall">Cons:</h5>
 			<ul>
-				<li>Hierarchy may not be important to user.</li>
-				<li>Multiple selection of categories is not possible in this model.</li>
+				<li><span>Hierarchy may not be important to user.</span></li>
+				<li><span>Multiple selection of categories is not possible in this model.</span></li>
 			</ul>
 		</p>
 		<h5>Segmented Drilldown</h5>
 		<p><i>Model: separate facets for department, category, and product. We always start the interaction with the highest differing parent, and only show facets when there are multiple options available.</i></p>
 		<p><h5 class="hsmall">Pros:</h5>
 			<ul>
-				<li>Very simple interaction</li>
-				<li>Accomodates for multiple selection of L3s.</li>
+				<li><span>Very simple interaction</span></li>
+				<li><span>Accomodates for multiple selection of L3s.</span></li>
 			</ul>
 		</p>
 		<p><h5 class="hsmall">Cons:</h5>
 			<ul>
-				<li>Parent-sibling relationship less explicit.</li>
-				<li>Separate facets hogs real estate.</li>
-				<li>New available facets will need to be discovered.</li>
-				<li>Vague terminology for Department vs. Category vs. Product.</li>
+				<li><span>Parent-sibling relationship less explicit.</span></li>
+				<li><span>Separate facets hogs real estate.</span></li>
+				<li><span>New available facets will need to be discovered.</span></li>
+				<li><span>Vague terminology for Department vs. Category vs. Product.</span></li>
 			</ul>
 		</p>
 		<p>Ultimately, we went with the Hierarchical Drilldown model, since it better suited our product taxonomy and didn't require renaming of any nodes.</p>
@@ -219,9 +219,9 @@
 		<h4>Color Facet Logic</h4>
 		<p>The logic I proposed:
 			<ul>
-				<li>Only display swatches that will return results.</li>
-				<li>All products must be represented by swatches.</li>
-				<li>No color drilldown. For example, if I choose red from a "blunt palette," we won't offer the user a more nuanced palette with several options of red.</li>
+				<li><span>Only display swatches that will return results.</span></li>
+				<li><span>All products must be represented by swatches.</span></li>
+				<li><span>No color drilldown. For example, if I choose red from a "blunt palette," we won't offer the user a more nuanced palette with several options of red.</span></li>
 			</ul>
 		</p>
 	</div>
@@ -285,9 +285,9 @@
 		<p>Another important piece of UX logic I recommended was how we presented dynamic changes in product availability to the user. Instead of just removing filter options that would produce null results, I proposed that:</p>
 
 			<ul>
-				<li>Unavailable options become disabled util the user undoes the restrictive filters.</li>
-				<li>Fetch a new color palette if a new one matches the results set.</li>
-				<li>If pool size is displayed, zero out the filter values.</li>
+				<li><span>Unavailable options become disabled util the user undoes the restrictive filters.</span></li>
+				<li><span>Fetch a new color palette if a new one matches the results set.</span></li>
+				<li><span>If pool size is displayed, zero out the filter values.</span></li>
 			</ul>
 		<p>The reason behind this interaction was because hiding options would be an erratic experience, especially if entire facets disappeared.</p>
 	</div>
@@ -347,10 +347,10 @@
 		<h5>In case of no exact match, show:</h5>
 		<p>
 			<ol>
-				<li>Smart Tokenization</li>
-				<li>Parent Category Products</li>
-				<li>Simple Tokenization</li>
-				<li>True Null Page</li>
+				<li><span>Smart Tokenization</span></li>
+				<li><span>Parent Category Products</span></li>
+				<li><span>Simple Tokenization</span></li>
+				<li><span>True Null Page</span></li>
 			</ol>
 		</p>
 	</div>
@@ -368,11 +368,11 @@
 		<p>I defined "smart tokenization" as tokenizing the query string when we can detect that each of the words is meaningful - that is, when we can detect a category as a keyword. (In other cases, a query may not make sense when broken up into its individual components).</p>
 		<p><i>Examples of queries eligible for Smart Tokenization:</i></p>
 			<ul>
-				<li>bathroom vanity</li>
-				<li>baby mobile</li>
-				<li>bombay chest</li>
-				<li>car trunk organizer</li>
-				<li>black crystal chandelier</li>
+				<li><span>bathroom vanity</span></li>
+				<li><span>baby mobile</span></li>
+				<li><span>bombay chest</span></li>
+				<li><span>car trunk organizer</span></li>
+				<li><span>black crystal chandelier</span></li>
 			</ul>
 		</p>
 	</div>
@@ -393,9 +393,9 @@
 		<p>If tokenization cannot be meaningful, the next step is for the system to check if we can detect the parent category of a product, using hierarchy from past products if needed.</p>
 		<p><i>Examples of queries eligible for detecting Parent Category:</i></p>
 			<ul>
-				<li>family rules</li>
-				<li>barbara barry</li>
-				<li>shabby chic</li>
+				<li><span>family rules</span></li>
+				<li><span>barbara barry</span></li>
+				<li><span>shabby chic</span></li>
 			</ul>
 		</p>
 	</div>

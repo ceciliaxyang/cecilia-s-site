@@ -6,6 +6,13 @@
   font-size: 200%;
 }
 
+.animated2 {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .animated {
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -523,6 +530,15 @@ ul, ol {
   font-size: 1.3rem;
 }
 
+li span {
+  position: relative;
+  left: 8px;
+}
+
+/*li > ul > li {
+  margin-left: 12px;
+}
+*/
 em,
 i {
   font-family: 'AGaramondPro-Italic';
