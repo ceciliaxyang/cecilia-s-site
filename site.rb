@@ -7,7 +7,8 @@ class Site < Sinatra::Base
     @seconds_old = Time.now - Time.local(1987, 3, 12)
     @age = @seconds_old / 365.25 / 24 / 60 / 60
     @show_footer = true
-    erb :about
+    @show_navbar = true
+    erb :design
   end
 
   get '/design' do
