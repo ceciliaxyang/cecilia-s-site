@@ -348,6 +348,10 @@
     background-position: top;
 }
 
+#mtdavidson {
+    background-image: url(/img/vsco/mtdavidson2.png);
+/*    background-position: top;*/
+}
 
 
 
@@ -391,6 +395,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  height: 600px;
+}
+
+
+#vscomap {
+  background-image: url(/img/vsco/vscomap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: middle;
   height: 600px;
 }
 
@@ -519,6 +532,11 @@ h6 {font-size: 0.85rem;}
 
 p {
   font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+p.big {
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 

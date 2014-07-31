@@ -7,8 +7,8 @@ class Site < Sinatra::Base
     @seconds_old = Time.now - Time.local(1987, 3, 12)
     @age = @seconds_old / 365.25 / 24 / 60 / 60
     @show_footer = true
-    @show_navbar = true
-    erb :design
+    # @show_navbar = true
+    erb :about
   end
 
   get '/design' do
@@ -61,6 +61,13 @@ class Site < Sinatra::Base
     @show_navbar = true
     @show_footer = true
     erb :bigjamboxbuttons
+  end
+
+
+  get '/dear-vsco' do
+    @show_navbar = true
+    @show_footer = true
+    erb :vsco
   end
 
   not_found do
