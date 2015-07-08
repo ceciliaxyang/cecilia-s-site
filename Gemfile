@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-gem 'ruby'
+ruby '2.0.0'
 gem 'sinatra'
 gem 'nesta', '0.9.13'
 gem 'pg'
