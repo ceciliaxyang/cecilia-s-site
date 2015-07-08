@@ -1,3 +1,7 @@
 source 'http://rubygems.org'
+gem 'ruby'
 gem 'sinatra'
 gem 'nesta', '0.9.13'
+gem 'pg'
+gem 'railties'
+gem 'thin'
